@@ -15,7 +15,7 @@
     #000000bd 0%,
     #e62d3000 75%,
     #000000 100%
-  ), url("/group/IMG_4040.jpg");
+  ), url("/public/group/IMG_4040.jpg");
  /* background-attachment: fixed; */
   background-repeat: no-repeat;
   background-size: cover;
@@ -181,7 +181,7 @@
     #00000071 0%,
     #e62d3046 55%,
     #000000d6 100%
-  ), url("/group/IMG_4215.JPG");
+  ), url("/public/group/IMG_4215.JPG");
    background-size: cover;
    border-radius: 5px 0px 0px 5px;
    /* position: absolute;
@@ -197,7 +197,7 @@
     #00000071 0%,
     #e62d304e 55%,
     #000000d6 100%
-  ), url("/group/IMG_4227.JPG");
+  ), url("/public/group/IMG_4227.JPG");
    background-size: cover;
     /* position: absolute;
    top: -20%;
@@ -212,7 +212,7 @@
     #00000071 0%,
     #e62d304e 55%,
     #000000d6 100%
-  ),  url("/group/IMG_3862.jpg");
+  ),  url("/public/group/IMG_3862.jpg");
    background-size: cover;
    border-radius: 0px 5px 5px 0px;
     /* position: absolute;
@@ -257,7 +257,7 @@
 
 .pastor_img {
   width: 40%;
-  background-image: url("/desmond-jummy.jpeg");
+  background-image: url("/public/desmond-jummy.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   /* border: 4px solid var(--secondary-color); */

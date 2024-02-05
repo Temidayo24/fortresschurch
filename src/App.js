@@ -1,5 +1,6 @@
 import './globals.css';
 import './contact.css';
+import './about.css';
 import Home from './home';
 import { Route, Routes } from 'react-router-dom';
 import Contact from './Pages/Contact';

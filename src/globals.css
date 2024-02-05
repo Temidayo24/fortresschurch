@@ -92,7 +92,7 @@ button {
 
 .header {
   position: absolute;
-  z-index: 1000;
+  z-index: 1000000;
   width: 100vw;
   padding: 10px 15px;
   display: flex;
@@ -140,7 +140,7 @@ button {
   );
   position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 1000000;
   width: 100%;
 }
 
@@ -271,7 +271,7 @@ button {
 }
 
 .banner_section {
-  height: 90vh;
+  height: 85vh;
   width: 100%;
   display: flex;
   justify-content: center;

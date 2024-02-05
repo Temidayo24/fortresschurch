@@ -83,6 +83,23 @@ const Home = () => {
             {/* <div className="b_img"></div> */}
           </div>
         </section>
+        <section className="motto">
+          <motion.div
+            initial={{ x: -200 }}
+            whileInView={{
+              x: 0,
+              transition: {
+                type: "spring",
+                duration: 1.5,
+                bounce: 0.4,
+                // delay: 0.5,
+              },
+            }}
+            viewport={{ once: true }}
+          >
+            Bringing Divinity to Humanity...
+          </motion.div>
+        </section>
         {/* <div className="updates_section">
           <motion.div
             initial={{ y: 50 }}
