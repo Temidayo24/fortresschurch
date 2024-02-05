@@ -86,7 +86,7 @@ a {
   cursor: pointer;
 }
 
-button {
+button, input {
   font-family: var(--font-lato);
 }
 
