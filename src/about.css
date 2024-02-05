@@ -128,8 +128,8 @@
 .vision_mission h4,
 .our_values h4,
 .vision_header {
-  font-size: 2.3em;
-  font-family: var(--font-cookie);
+  font-size: 2em;
+  font-family: "Lato";
   color: #000000;
   /* background-color: var(--primary-dark-color);
   color: #ffffff; */
@@ -174,7 +174,7 @@
   height: 100%;
   background: url("/public/group/IMG_4215.JPG");
   background-size: cover;
-  width: 30%;
+  flex: 1;
   z-index: 10;
   transition: all 0.2s;
   outline-offset: 0.8em;
@@ -186,12 +186,12 @@
   background: url("/public/group/IMG_4227.JPG");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 30%;
+  flex: 1;
   z-index: 10;
   transition: all 0.2s;
   outline-offset: 0.8em;
   border: 5px solid #55c57a;
-  margin-top: -30px;
+  margin-top: -35px;
 }
 
 .vision_img_3 {
@@ -200,7 +200,7 @@
     url("/public/group/IMG_3862.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 30%;
+  flex: 1;
   z-index: 20;
   transition: all 0.2s;
   outline-offset: 0.8em;
@@ -213,12 +213,12 @@
     url("/public/greenhouse/IMG_3951.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 30%;
+   flex: 1;
   z-index: 20;
   transition: all 0.2s;
   outline-offset: 0.8em;
   border: 5px solid #55c57a;
-  margin-top: 30px;
+  margin-top: -35px;
 }
 .vision_img_5 {
   height: 100%;
@@ -226,12 +226,11 @@
     url("/public/IMG-0060.JPG");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 30%;
+  flex: 1;
   z-index: 20;
   transition: all 0.2s;
   outline-offset: 0.8em;
   border: 5px solid #55c57a;
-  margin-top: -35px;
 }
 .vision_img_6 {
   height: 100%;
@@ -239,7 +238,7 @@
     url("/public/IMG-0084.JPG");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 30%;
+  flex: 1;
   z-index: 20;
   transition: all 0.2s;
   outline-offset: 0.8em;
@@ -252,7 +251,7 @@
     url("/public/group/IMG_4277.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 30%;
+  flex: 1;
   z-index: 20;
   transition: all 0.2s;
   outline-offset: 0.8em;
@@ -265,7 +264,7 @@
     url("/public/group/IMG_4227.JPG");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 30%;
+  flex: 1;
   z-index: 20;
   transition: all 0.2s;
   outline-offset: 0.8em;
