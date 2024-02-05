@@ -530,6 +530,7 @@ h3 {
   z-index: 10;
   transition: all 0.2s;
   outline-offset: 1em;
+  border: 5px solid #55c57a;
 }
 
 .img-top:hover,
@@ -539,6 +540,7 @@ h3 {
   transform: scale(1.05) translateY(-0.5rem);
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
   z-index: 1000;
+  border: 0;
 }
 
 .img-middle {
@@ -553,6 +555,8 @@ h3 {
   z-index: 10;
   transition: all 0.2s;
   outline-offset: 1em;
+    border: 5px solid #55c57a;
+
 }
 
 .img-bottom {
@@ -567,6 +571,8 @@ h3 {
   z-index: 20;
   transition: all 0.2s;
   outline-offset: 1em;
+    border: 5px solid #55c57a;
+
 }
 
 .services-section-skew {
