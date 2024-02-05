@@ -201,6 +201,7 @@ const Home = () => {
           >
             <div className="people_img_container">
               <div className="img-top"></div>
+              <div className="img-middle"></div>
               <div className="img-bottom"></div>
             </div>
           </motion.div>
@@ -225,130 +226,90 @@ const Home = () => {
               className="services_flex"
             >
               <div className="services">
-                <div className="service_name">
-                  <div className="service-img service-img1"></div>
-                  <div className="service_logo">
-                    {/* <img
-                      src="/icons/church.png"
-                      alt="logo"
-                      width={40}
-                      height={40}
-                    /> */}
-                    <Services
-                      title="Sunday Service"
-                      time="8:30 am"
-                      text1="2nd Floor, 10 Coker Rd, Opposite Chicken Republic, Ilupeju, Lagos."
-                      text2="@thefortresschurch"
-                      text3="The Fortress International Church"
-                      path={[
-                        "/icons/location-black-filled.png",
-                        "/icons/youtube.svg",
-                        "/icons/mixlr.png",
-                      ]}
-                      classname="services_container"
-                    />
-                  </div>
-                </div>
+                <Services
+                  title="Sunday Service"
+                  days="Sundays"
+                  time="8:30 am"
+                  text1="2nd Floor, 10 Coker Rd, Opposite Chicken Republic, Ilupeju, Lagos."
+                  text2="@thefortresschurch"
+                  text3="The Fortress International Church"
+                  path={[
+                    { to: "", src: "/icons/church.png" },
+                    { to: "", src: "/icons/youtube.svg" },
+                    {
+                      to: "https://thefortresschurch.mixlr.com",
+                      src: "/icons/mixlr.svg",
+                    },
+                  ]}
+                  classname="services_container"
+                />
               </div>
               <div className=" services">
-                <div className="service_name">
-                  <div className="service-img service-img2"></div>
-                  <div className="service_logo">
-                    {/* <img
-                      src="/icons/church.png"
-                      alt="logo"
-                      width={40}
-                      height={40}
-                    /> */}
-                    <Services
-                      title="Fresh Word"
-                      days="Every Tuesdays and Thursdays"
-                      time="12:00 pm"
-                      text3="@thefortresschurch"
-                      path={["/icons/mixlr.png"]}
-                      classname="services_container"
-                    />
-                  </div>
-                </div>
+                <Services
+                  title="Fresh Word"
+                  days="Tuesdays and Thursdays"
+                  time="12:00 pm"
+                  text3="@thefortresschurch"
+                  path={[
+                    {
+                      to: "https://thefortresschurch.mixlr.com",
+                      src: "/icons/mixlr.svg",
+                    },
+                  ]}
+                  classname="services_container"
+                />
               </div>
               <div className=" services">
-                <div className="service_name">
-                  <div className="service-img service-img3"></div>
-                  <div className="service_logo">
-                    {/* <img
-                      src="/icons/church.png"
-                      alt="logo"
-                      width={40}
-                      height={40}
-                    /> */}
-                    <Services
-                      title="Midweek Service"
-                      days="Every Wednesdays"
-                      time="6:00 pm"
-                      text1="2nd Floor, 10 Coker Rd, Opposite Chicken Republic, Ilupeju, Lagos."
-                      text2="@thefortresschurch"
-                      text3="The Fortress International Church"
-                      path={[
-                        "/icons/location-black-filled.png",
-                        "/icons/youtube.svg",
-                        "/icons/mixlr.png",
-                      ]}
-                      classname="services_container"
-                    />
-                  </div>
-                </div>
+                <Services
+                  title="Midweek Service"
+                  days="Wednesdays"
+                  time="6:00 pm"
+                  text1="2nd Floor, 10 Coker Rd, Opposite Chicken Republic, Ilupeju, Lagos."
+                  text2="@thefortresschurch"
+                  text3="The Fortress International Church"
+                  path={[
+                    { to: "", src: "/icons/church.png" },
+                    { to: "", src: "/icons/youtube.svg" },
+                    {
+                      to: "https://thefortresschurch.mixlr.com",
+                      src: "/icons/mixlr.svg",
+                    },
+                  ]}
+                  classname="services_container"
+                />
               </div>
               <div className="services">
-                <div className="service_name">
-                  <div className="service-img service-img4"></div>
-                  <div className="service_logo">
-                    {/* <img
-                      src="/icons/church.png"
-                      alt="logo"
-                      width={40}
-                      height={40}
-                    /> */}
-                    <Services
-                      title="Apostolic Prayer Meeting"
-                      days="Every Fridays"
-                      time="6:30 pm"
-                      text3="@thefortresschurch"
-                      path={["/icons/mixlr.png"]}
-                      classname="services_container"
-                    />
-                  </div>
-                </div>
+                <Services
+                  title="Apostolic Prayer Meeting"
+                  days="Fridays"
+                  time="6:30 pm"
+                  text3="@thefortresschurch"
+                  path={[
+                    {
+                      to: "https://thefortresschurch.mixlr.com",
+                      src: "/icons/mixlr.svg",
+                    },
+                  ]}
+                  classname="services_container"
+                />
               </div>
               <div className="services">
-                <div className="service_name">
-                  <div className="service-img service-img5"></div>
-                  <div className="service_logo">
-                    {/* <img
-                      src="/icons/church.png"
-                      alt="logo"
-                      width={40}
-                      height={40}
-                    /> */}
-                    <Services
-                      title="Fresh Dew"
-                      days="Every Saturdays"
-                      time="6:00 am"
-                      text3="@thefortresschurch"
-                      path={["/icons/mixlr.png"]}
-                      classname="services_container"
-                    />
-                  </div>
-                </div>
+                <Services
+                  title="Fresh Dew"
+                  days="Saturdays"
+                  time="6:00 am"
+                  text3="@thefortresschurch"
+                  path={[
+                    {
+                      to: "https://thefortresschurch.mixlr.com",
+                      src: "/icons/mixlr.svg",
+                    },
+                  ]}
+                  classname="services_container"
+                />
               </div>
             </motion.div>
           </section>
-        </section>
-        <section className="elixir_section">
-          <h3>Daily Devotional</h3>
-          <span>ELIXIR OF LIFE</span>
-          <Link to="">
-            <button>Read</button>
-          </Link>
         </section>
         <section className="confession">
           <div className="confession_text">
@@ -361,6 +322,39 @@ const Home = () => {
               hands. It can never get worse with me, in the name of Jesus it
               will only get better.
             </p>
+          </div>
+        </section>
+        <section className="elixir_section">
+          <h3>Daily Devotional</h3>
+          <span>ELIXIR OF LIFE</span>
+          <Link to="">
+            <button>Read</button>
+          </Link>
+        </section>
+        <section className="give_section" id="give">
+          <div>
+            Give
+            <span>Want to expand God's kingdom?</span>
+          </div>
+          <div className="give_card_container">
+            <div className="give_card">
+              <div className="give_card_img">
+                <img alt=" " src="" />
+              </div>
+              <span>Give</span>
+            </div>
+            <div className="give_card">
+              <div className="give_card_img">
+                <img alt=" " src="" />
+              </div>
+              <span>Give</span>
+            </div>
+            <div className="give_card">
+              <div className="give_card_img">
+                <img alt=" " src="" />
+              </div>
+              <span>Give</span>
+            </div>
           </div>
         </section>
         <Contact />
