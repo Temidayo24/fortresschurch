@@ -111,6 +111,11 @@ const About = () => {
             <div className="vision_img_1"></div>
             <div className="vision_img_2"></div>
             <div className="vision_img_3"></div>
+            <div className="vision_img_4"></div>
+            <div className="vision_img_5"></div>
+            <div className="vision_img_6"></div>
+            <div className="vision_img_7"></div>
+            <div className="vision_img_8"></div>
           </motion.div>
           <div className="vision_img_flex">
             <div className="vision_container">

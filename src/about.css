@@ -4,19 +4,15 @@
 } */
 
 .about_banner {
-   height: 450px;
+  height: 450px;
   display: flex;
   align-items: center;
   width: 100%;
   /* padding-top: 0;
   margin-top: 0; */
-  background:  linear-gradient(
-    180deg,
-    #000000bd 0%,
-    #e62d3000 75%,
-    #000000 100%
-  ), url("/public/group/IMG_4040.jpg");
- /* background-attachment: fixed; */
+  background: linear-gradient(180deg, #000000bd 0%, #e62d3000 75%, #000000 100%),
+    url("/public/group/IMG_4040.jpg");
+  /* background-attachment: fixed; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -34,8 +30,8 @@
 }
 
 .about_banner span {
- border-bottom: 2px solid white;
- line-height: 1em;
+  border-bottom: 2px solid white;
+  line-height: 1em;
 }
 
 .motto {
@@ -58,9 +54,9 @@
 }
 
 .about-logo {
- float: left;
- border-radius: 50%;
- margin-right: 10px;
+  float: left;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .fortress {
@@ -89,7 +85,7 @@
   gap: 2em;
   background-repeat: no-repeat;
   background-position: bottom;
-   position: relative;
+  position: relative;
 }
 
 .vision_img_flex {
@@ -98,7 +94,7 @@
   justify-content: center;
   align-items: center;
   gap: 2em;
-   padding: 60px 5%;
+  padding: 60px 5%;
 }
 
 .vision_container,
@@ -166,58 +162,171 @@
 
 .vision_img {
   width: 100%;
-   height: 300px;
+  height: 300px;
   display: flex;
-   padding: 0px 2%;
+  gap: 4px;
+  padding: 0px 2%;
   position: relative;
-   border-radius: 5px;
+  border-radius: 5px;
 }
 
 .vision_img_1 {
-  width: 450px;
   height: 100%;
-   background: linear-gradient(
-    180deg,
-    #00000071 0%,
-    #e62d3046 55%,
-    #000000d6 100%
-  ), url("/public/group/IMG_4215.JPG");
-   background-size: cover;
-   border-radius: 5px 0px 0px 5px;
-   /* position: absolute;
-   top: 0%;
-   left: 0%; */
+  background: linear-gradient(
+      180deg,
+      #00000071 0%,
+      #e62d3046 55%,
+      #000000d6 100%
+    ),
+    url("/public/group/IMG_4215.JPG");
+  background-size: cover;
+  width: 30%;
+  z-index: 10;
+  transition: all 0.2s;
+  outline-offset: 0.8em;
+  border: 5px solid #55c57a;
 }
 
 .vision_img_2 {
-  width: 450px;
   height: 100%;
-   background: linear-gradient(
-    180deg,
-    #00000071 0%,
-    #e62d304e 55%,
-    #000000d6 100%
-  ), url("/public/group/IMG_4227.JPG");
-   background-size: cover;
-    /* position: absolute;
-   top: -20%;
-   left: 32%; */
+  background: linear-gradient(
+      180deg,
+      #00000071 0%,
+      #e62d304e 55%,
+      #000000d6 100%
+    ),
+    url("/public/group/IMG_4227.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30%;
+  z-index: 10;
+  transition: all 0.2s;
+  outline-offset: 0.8em;
+  border: 5px solid #55c57a;
+  margin-top: -30px;
 }
 
 .vision_img_3 {
-  width: 450px;
   height: 100%;
-   background: linear-gradient(
-    180deg,
-    #00000071 0%,
-    #e62d304e 55%,
-    #000000d6 100%
-  ),  url("/public/group/IMG_3862.jpg");
-   background-size: cover;
-   border-radius: 0px 5px 5px 0px;
-    /* position: absolute;
-     top: 0%;
-   right: 0%; */
+  background: linear-gradient(
+      180deg,
+      #00000071 0%,
+      #e62d304e 55%,
+      #000000d6 100%
+    ),
+    url("/public/group/IMG_3862.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30%;
+  z-index: 20;
+  transition: all 0.2s;
+  outline-offset: 0.8em;
+  border: 5px solid #55c57a;
+}
+
+.vision_img_4 {
+  height: 100%;
+  background: linear-gradient(
+      180deg,
+      #00000071 0%,
+      #e62d304e 55%,
+      #000000d6 100%
+    ),
+    url("/public/greenhouse/IMG_3951.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30%;
+  z-index: 20;
+  transition: all 0.2s;
+  outline-offset: 0.8em;
+  border: 5px solid #55c57a;
+  margin-top: 30px;
+}
+.vision_img_5 {
+  height: 100%;
+  background: linear-gradient(
+      180deg,
+      #00000071 0%,
+      #e62d304e 55%,
+      #000000d6 100%
+    ),
+    url("/public/IMG-0060.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30%;
+  z-index: 20;
+  transition: all 0.2s;
+  outline-offset: 0.8em;
+  border: 5px solid #55c57a;
+  margin-top: -35px;
+}
+.vision_img_6 {
+  height: 100%;
+  background: linear-gradient(
+      180deg,
+      #00000071 0%,
+      #e62d304e 55%,
+      #000000d6 100%
+    ),
+    url("/public/IMG-0084.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30%;
+  z-index: 20;
+  transition: all 0.2s;
+  outline-offset: 0.8em;
+  border: 5px solid #55c57a;
+  margin-top: 35px;
+}
+.vision_img_7 {
+  height: 100%;
+  background: linear-gradient(
+      180deg,
+      #00000071 0%,
+      #e62d304e 55%,
+      #000000d6 100%
+    ),
+    url("/public/group/IMG_4277.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30%;
+  z-index: 20;
+  transition: all 0.2s;
+  outline-offset: 0.8em;
+  border: 5px solid #55c57a;
+  margin-top: -30px;
+}
+.vision_img_8 {
+  height: 100%;
+  background: linear-gradient(
+      180deg,
+      #00000071 0%,
+      #e62d304e 55%,
+      #000000d6 100%
+    ),
+    url("/public/group/IMG_4227.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30%;
+  z-index: 20;
+  transition: all 0.2s;
+  outline-offset: 0.8em;
+  border: 5px solid #55c57a;
+}
+
+.vision_img_1:hover,
+.vision_img_2:hover,
+.vision_img_3:hover,
+.vision_img_4:hover,
+.vision_img_5:hover,
+.vision_img_6:hover,
+.vision_img_7:hover,
+.vision_img_8:hover {
+   outline: 10px solid #55c57a;
+  transform: scale(1.1);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  border: 0;
 }
 
 .our_pastor {
@@ -225,10 +334,10 @@
   gap: 4em;
   padding: 60px 5% 80px;
   background: linear-gradient(
-      to right bottom,
-      rgba(28, 76, 19, 0.222),
-      rgba(40, 180, 133, 0.202)
-    );
+    to right bottom,
+    rgba(28, 76, 19, 0.222),
+    rgba(40, 180, 133, 0.202)
+  );
   /* background-color: #07182a; */
   /* background-color: #d8f4cd; */
   color: black;
@@ -237,7 +346,7 @@
 
 .pastor_text {
   width: 60%;
-   display: flex;
+  display: flex;
   flex-direction: column;
   gap: 1em;
 }
@@ -249,7 +358,7 @@
 }
 
 .pastor_text h3 {
-  font-size: 2.em;
+  font-size: 2em;
   text-decoration: underline 2px black;
   border-bottom: none;
   /* color: #ffffff; */
