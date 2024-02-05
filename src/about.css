@@ -94,7 +94,7 @@
   justify-content: center;
   align-items: center;
   gap: 2em;
-  padding: 60px 5%;
+  padding: 100px 5%;
 }
 
 .vision_container,
@@ -106,7 +106,7 @@
   background-color: rgba(40, 180, 133, 0.208);
   height: 450px;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 .vision_container:hover,
@@ -172,13 +172,7 @@
 
 .vision_img_1 {
   height: 100%;
-  background: linear-gradient(
-      180deg,
-      #00000071 0%,
-      #e62d3046 55%,
-      #000000d6 100%
-    ),
-    url("/public/group/IMG_4215.JPG");
+  background: url("/public/group/IMG_4215.JPG");
   background-size: cover;
   width: 30%;
   z-index: 10;
@@ -189,13 +183,7 @@
 
 .vision_img_2 {
   height: 100%;
-  background: linear-gradient(
-      180deg,
-      #00000071 0%,
-      #e62d304e 55%,
-      #000000d6 100%
-    ),
-    url("/public/group/IMG_4227.JPG");
+  background: url("/public/group/IMG_4227.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   width: 30%;
@@ -208,12 +196,7 @@
 
 .vision_img_3 {
   height: 100%;
-  background: linear-gradient(
-      180deg,
-      #00000071 0%,
-      #e62d304e 55%,
-      #000000d6 100%
-    ),
+  background:
     url("/public/group/IMG_3862.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -226,12 +209,7 @@
 
 .vision_img_4 {
   height: 100%;
-  background: linear-gradient(
-      180deg,
-      #00000071 0%,
-      #e62d304e 55%,
-      #000000d6 100%
-    ),
+  background:
     url("/public/greenhouse/IMG_3951.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -244,12 +222,7 @@
 }
 .vision_img_5 {
   height: 100%;
-  background: linear-gradient(
-      180deg,
-      #00000071 0%,
-      #e62d304e 55%,
-      #000000d6 100%
-    ),
+  background:
     url("/public/IMG-0060.JPG");
   background-size: cover;
   background-repeat: no-repeat;
@@ -262,12 +235,7 @@
 }
 .vision_img_6 {
   height: 100%;
-  background: linear-gradient(
-      180deg,
-      #00000071 0%,
-      #e62d304e 55%,
-      #000000d6 100%
-    ),
+  background:
     url("/public/IMG-0084.JPG");
   background-size: cover;
   background-repeat: no-repeat;
@@ -280,12 +248,7 @@
 }
 .vision_img_7 {
   height: 100%;
-  background: linear-gradient(
-      180deg,
-      #00000071 0%,
-      #e62d304e 55%,
-      #000000d6 100%
-    ),
+  background:
     url("/public/group/IMG_4277.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -298,12 +261,7 @@
 }
 .vision_img_8 {
   height: 100%;
-  background: linear-gradient(
-      180deg,
-      #00000071 0%,
-      #e62d304e 55%,
-      #000000d6 100%
-    ),
+  background:
     url("/public/group/IMG_4227.JPG");
   background-size: cover;
   background-repeat: no-repeat;
