@@ -280,7 +280,7 @@ button, input {
   position: relative;
   background: linear-gradient(
       to right bottom,
-      rgb(28, 76, 19),
+      rgba(28, 76, 19, 0.807),
       rgba(40, 180, 133, 0.8)
     ),
     url(/public/group/IMG_4197.jpg);
@@ -579,7 +579,7 @@ h3 {
   /* transform: skewY(-4deg); */
   background: linear-gradient(
       to right bottom,
-      rgb(28, 76, 19),
+      rgba(28, 76, 19, 0.807),
       rgba(40, 180, 133, 0.8)
     ),
     url(/public/bible.jpg);
