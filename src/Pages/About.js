@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { easeIn, motion, Variants } from "framer-motion";
 import { Link } from "react-router-dom";
 import Header from '../components/Header';
@@ -7,9 +7,12 @@ import Footer from '../components/Footer';
 
 
 const About = () => {
+
+   const [hasViewed, setHasViewed] = useState(false);
+
   return (
     <>
-    <Header/>
+      <Header />
       <main className="about_page_section">
         <section className="about_banner">
           <motion.div
@@ -99,12 +102,13 @@ const About = () => {
         <section className="vision_mission_statement">
           <motion.div
             initial={{ scale: 0.8 }}
-            whileInView={{
-              scale: 0.9,
-              transition: {
-                delay: 0.7,
-                duration: 1,
-              },
+            animate={
+              hasViewed ? { scale: 0.9, transition: { duration: 1, delay: 0.7 } } : {}
+            }
+            onViewportEnter={() => {
+              if (!hasViewed) {
+                setHasViewed(true);
+              }
             }}
             className="vision_img"
           >
@@ -221,7 +225,7 @@ const About = () => {
           </div>
         </section>
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }

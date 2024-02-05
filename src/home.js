@@ -7,9 +7,13 @@ import Header from "./components/Header";
 import { Link } from "react-router-dom";
 import Footer from "./components/Footer";
 import Contact from "./Pages/Contact";
+import { useState } from "react";
 // import React, { useState, useClient } from 'react'
 
 const Home = () => {
+
+  const [hasViewed, setHasViewed] = useState(false);
+
   return (
     <div className="all-container">
       <Header />
@@ -162,14 +166,18 @@ const Home = () => {
         <section className="about_section">
           <motion.div
             initial={{ y: 100 }}
-            whileInView={{
-              y: 0,
-              transition: {
-                type: "spring",
-                duration: 1.5,
-                bounce: 0.4,
-                // delay: 0.5,
-              },
+            animate={
+              hasViewed
+                ? {
+                    y: 0,
+                    transition: { type: "spring", duration: 1.5, bounce: 0.4 },
+                  }
+                : {}
+            }
+            onViewportEnter={() => {
+              if (!hasViewed) {
+                setHasViewed(true);
+              }
             }}
             className="about_us"
           >
@@ -205,14 +213,18 @@ const Home = () => {
           </motion.div>
           <motion.div
             initial={{ x: 200 }}
-            whileInView={{
-              x: 0,
-              transition: {
-                type: "spring",
-                duration: 1.5,
-                bounce: 0.4,
-                // delay: 0.5,
-              },
+            animate={
+              hasViewed
+                ? {
+                    x: 0,
+                    transition: { type: "spring", duration: 1.5, bounce: 0.4 },
+                  }
+                : {}
+            }
+            onViewportEnter={() => {
+              if (!hasViewed) {
+                setHasViewed(true);
+              }
             }}
             className="about_images"
           >
@@ -231,14 +243,22 @@ const Home = () => {
             </div>
             <motion.div
               initial={{ x: -200 }}
-              whileInView={{
-                x: 0,
-                transition: {
-                  type: "spring",
-                  duration: 1.5,
-                  bounce: 0.4,
-                  // delay: 0.5,
-                },
+              animate={
+                hasViewed
+                  ? {
+                      x: 0,
+                      transition: {
+                        type: "spring",
+                        duration: 1.5,
+                        bounce: 0.4,
+                      },
+                    }
+                  : {}
+              }
+              onViewportEnter={() => {
+                if (!hasViewed) {
+                  setHasViewed(true);
+                }
               }}
               className="services_flex"
             >
