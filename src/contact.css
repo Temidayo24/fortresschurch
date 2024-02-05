@@ -1,7 +1,11 @@
 .contact_section {
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(28, 76, 19, 0.222),
+    rgba(40, 180, 133, 0.202)
+  );
   height: 100%;
-  padding: 150px 0;
+  padding: 150px 0 0;
 }
 
 .contact_section h4 {
