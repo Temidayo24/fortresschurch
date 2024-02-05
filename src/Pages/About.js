@@ -100,7 +100,7 @@ const About = () => {
           <motion.div
             initial={{ scale: 0.8 }}
             whileInView={{
-              scale: 1,
+              scale: 0.9,
               transition: {
                 delay: 0.7,
                 duration: 1,
