@@ -20,14 +20,14 @@ const Home = () => {
       <main>
         <section className="banner_section">
           <div className="intro">
+            <img
+              src="/Fortress-Logo.png"
+              alt="logo"
+              width="100px"
+              height="100px"
+              // className="logo"
+            />
             <motion.div className="welcome">
-              <img
-                src="/Fortress-Logo.png"
-                alt="logo"
-                width="100px"
-                height="100px"
-                // className="logo"
-              />
               <motion.div
                 initial={{ x: 10 }}
                 whileInView={{

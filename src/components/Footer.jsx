@@ -99,6 +99,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer-address">
+            <span>Visit Us!</span>
             <p>
               The Fortress International Church <br />
               10 Coker Road,
