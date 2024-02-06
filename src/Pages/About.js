@@ -103,7 +103,9 @@ const About = () => {
           <motion.div
             initial={{ scale: 0.8 }}
             animate={
-              hasViewed ? { scale: 0.9, transition: { duration: 1, delay: 0.7 } } : {}
+              hasViewed
+                ? { scale: 1, transition: { duration: 1, delay: 0.7 } }
+                : {}
             }
             onViewportEnter={() => {
               if (!hasViewed) {
@@ -112,14 +114,62 @@ const About = () => {
             }}
             className="vision_img"
           >
-            <div className="vision_img_1"></div>
-            <div className="vision_img_2"></div>
-            <div className="vision_img_3"></div>
-            <div className="vision_img_4"></div>
-            <div className="vision_img_5"></div>
-            <div className="vision_img_6"></div>
-            <div className="vision_img_7"></div>
-            <div className="vision_img_8"></div>
+            <div className="vision_img_1">
+              <img
+                src="/IMG_4215.JPG"
+                alt="members pictures"
+                className=""
+              />
+            </div>
+            <div className="vision_img_2">
+              <img
+                src="/IMG_4227.JPG"
+                alt="members pictures"
+                className=""
+              />
+            </div>
+            <div className="vision_img_3">
+              <img
+                src="/IMG_3862.jpg"
+                alt="members pictures"
+                className=""
+              />
+            </div>
+            <div className="vision_img_4">
+              <img
+                src="/IMG_3951.jpg"
+                alt="members pictures"
+                className=""
+              />
+            </div>
+            <div className="vision_img_5">
+              <img
+                src="/IMG-0060.JPG"
+                alt="members pictures"
+                className=""
+              />
+            </div>
+            <div className="vision_img_6">
+              <img
+                src="/IMG-0084.JPG"
+                alt="members pictures"
+                className=""
+              />
+            </div>
+            <div className="vision_img_7">
+              <img
+                src="/IMG_4277.jpg"
+                alt="members pictures"
+                className=""
+              />
+            </div>
+            <div className="vision_img_8">
+              <img
+                src="/IMG-0050.JPG"
+                alt="members pictures"
+                className=""
+              />
+            </div>
           </motion.div>
           <div className="vision_img_flex">
             <div className="vision_container">
@@ -146,20 +196,20 @@ const About = () => {
                 <h4>Our Values</h4>
                 <div className="values">
                   <p>
-                    <span>PURPOSE: </span>God created everyone for a specific
+                    <span>PURPOSE </span>God created everyone for a specific
                     assignment. You are designed to fit into a certain intention
                     of God. You are created to solve certain problems. We are
                     committed to training and teaching you scriptural-based
                     insight that awakens you to your purpose.
                   </p>
                   <p>
-                    <span>PASSION: </span>We are designed to love God with all
+                    <span>PASSION </span>We are designed to love God with all
                     our heart, soul, and strength. We must give him our all for
                     us to get all from Him. We must be unapologetically sold out
                     to the course of the kingdom not holding back anything.
                   </p>
                   <p>
-                    <span>PURITY: </span> It has to be pure to be acceptable to
+                    <span>PURITY </span> It has to be pure to be acceptable to
                     God. The intention must be pure to pleasing. We must yield
                     ourselves to purity in all its essence and state. God must
                     be pleased in all things. We are raising a people prepared
@@ -215,13 +265,11 @@ const About = () => {
             </div>
           </div>
           <div className="pastor_img">
-            {/* <Image
-            src="/desmond-jummy.jpeg"
-            alt="pastor&wife_picture"
-            width={350}
-            height={350}
-            className="pst_pic"
-          /> */}
+            <img
+              src="/desmond-jummy.jpeg"
+              alt="pastor&wife_picture"
+              className="pst_pic"
+            />
           </div>
         </section>
       </main>

@@ -361,7 +361,7 @@ const Home = () => {
             </p>
           </div>
         </section>
-        <section className="elixir_section">
+        <section className="elixir_section" id="elixir-of-life">
           <h3>Daily Devotional</h3>
           <span>ELIXIR OF LIFE</span>
           <Link to="">

@@ -3,7 +3,6 @@ import './contact.css';
 import './about.css';
 import Home from './home';
 import { Route, Routes } from 'react-router-dom';
-import Contact from './Pages/Contact';
 import Fellowship from './Pages/Fellowship';
 import Give from './Pages/Give';
 import About from './Pages/About';

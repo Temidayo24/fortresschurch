@@ -47,46 +47,41 @@ const Header = () => {
             className="logo"
           />
         </div>
-        <div className="church_title">
+        {/* <div className="church_title">
           <span>The Fortress</span>
           <span>Int&#39;l Church</span>
-        </div>
+        </div> */}
       </Link>
       <nav className="nav_ul">
         <NavLink
           to="/"
-          className={currentRoute === "/" ? "active-link" : "nav-link"}
+          className={({isActive}) => (isActive ? "active-link" : "nav-link")}
         >
           Home
         </NavLink>
         <NavLink
           to="/about"
-          className={currentRoute === "/about" ? "active-link" : "nav-link"}
+          className={({isActive}) => (isActive ? "active-link" : "nav-link")}
         >
           Who we are
         </NavLink>
-        <NavLink
-          to="/#services"
-          className={currentRoute === "/services" ? "active-link" : "nav-link"}
+        <a
+          href="/#services"
+          className="nav-link"
         >
           Our Services
-        </NavLink>
+        </a>
         <div className="dropdown_parent">
-          <NavLink
-            to="/resources"
-            className={
-              currentRoute === "/resources" ? "active-link" : "nav-link"
-            }
-          >
-            Resources <span></span>
+          <NavLink to="/resources" className={({isActive}) => isActive ? "active-link" : "nav-link"}>
+            Resources
           </NavLink>
-          <div className="dropdown">
+          <NavLink className="dropdown">
             <Link to="/resources/#video-sermons">Video Sermons</Link>
 
             <Link to="/resources/#audio-sermons">Audio Sermons</Link>
 
             <Link to="/resources/#e-books">E-Books</Link>
-          </div>
+          </NavLink>
         </div>
         {/* <div className="dropdown_parent">
               <Link
@@ -107,20 +102,15 @@ const Header = () => {
                 <Link to="/green-house">Green House</Link>
               </div>
             </div> */}
-        {/* <Link
-              to="/elixir-of-life"
-              className={
-                currentRoute === "/elixir-of-life" ? "active-link" : "nav-link"
-              }
-            >
-              Elixir of Life
-            </Link> */}
-        <NavLink
-          to="/contact"
-          className={currentRoute === "/contact" ? "active-link" : "nav-link"}
+        <a
+          href="/#elixir-of-life"
+          className="nav-link"
         >
+          Elixir of Life
+        </a>
+        <a href="/#contact" className="nav-link">
           Contact Us
-        </NavLink>
+        </a>
         <NavLink
           to="/give"
           // className="give"

@@ -76,48 +76,75 @@
 }
 
 .vision_mission_statement {
-  padding: 0;
   display: flex;
-  height: fit-content;
   flex-direction: column;
-  align-items: center;
-  text-align: justify;
+  height: 100%;
+  align-items: flex-start;
   gap: 2em;
-  background-repeat: no-repeat;
-  background-position: bottom;
   position: relative;
+  padding: 60px 4% 80px;
 }
 
 .vision_img_flex {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
-  align-items: center;
-  gap: 2em;
-  padding: 100px 5%;
+  /* align-items: center; */
+  gap: 1em;
+  width: 100%;
+}
+
+.vision_img {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  border: 5px solid #55c57a;
+  padding: 5px;
+  width: 100%;
+  position: relative;
+}
+
+.vision_img div {
+  height: 200px;
+}
+
+.vision_img img {
+  height: 100%;
+  width: 100%;
+  transition: all 0.2s;
+  outline-offset: 0.8em;
+}
+
+.vision_img img:hover {
+  outline: 10px solid #55c57a;
+  transform: scale(1.1);
+  z-index: 1000;
+  border: 0;
 }
 
 .vision_container,
 .values-container {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   gap: 1em;
-  background-color: rgba(40, 180, 133, 0.208);
-  height: 450px;
+  background-color: #ffffff75;
+  height: 100%;
   padding: 20px;
   border-radius: 0px;
+  border: 1px solid #55c57a;
+  box-shadow: 5px 10px 30px #0000005e;
 }
 
 .vision_container:hover,
 .values-container:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
   box-shadow: 5px 10px 30px #0000005e;
 }
 
 .vision_mission {
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
   gap: 0.5em;
   color: #000000;
   font-size: 1em;
@@ -128,11 +155,9 @@
 .vision_mission h4,
 .our_values h4,
 .vision_header {
-  font-size: 2em;
+  font-size: 1.4em;
   font-family: "Lato";
   color: #000000;
-  /* background-color: var(--primary-dark-color);
-  color: #ffffff; */
   width: fit-content;
   border-bottom: 2px solid var(--secondary-color);
   font-weight: 500;
@@ -141,17 +166,17 @@
 .our_values {
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
   gap: 0.5em;
 }
 
 .values {
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  gap: 1em;
 }
 
 .values p {
-  border-radius: 5px;
   color: #000000;
 }
 
@@ -160,149 +185,35 @@
   font-weight: 800;
 }
 
-.vision_img {
-  width: 100%;
-  height: 300px;
+.vision-pastor-container {
   display: flex;
-  gap: 4px;
-  padding: 0px 2%;
-  position: relative;
-  border-radius: 5px;
-}
-
-.vision_img_1 {
-  height: 100%;
-  background: url("/public/group/IMG_4215.JPG");
-  background-size: cover;
-  flex: 1;
-  z-index: 10;
-  transition: all 0.2s;
-  outline-offset: 0.8em;
-  border: 5px solid #55c57a;
-}
-
-.vision_img_2 {
-  height: 100%;
-  background: url("/public/group/IMG_4227.JPG");
-  background-size: cover;
-  background-repeat: no-repeat;
-  flex: 1;
-  z-index: 10;
-  transition: all 0.2s;
-  outline-offset: 0.8em;
-  border: 5px solid #55c57a;
-  margin-top: -35px;
-}
-
-.vision_img_3 {
-  height: 100%;
-  background:
-    url("/public/group/IMG_3862.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  flex: 1;
-  z-index: 20;
-  transition: all 0.2s;
-  outline-offset: 0.8em;
-  border: 5px solid #55c57a;
-}
-
-.vision_img_4 {
-  height: 100%;
-  background:
-    url("/public/greenhouse/IMG_3951.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-   flex: 1;
-  z-index: 20;
-  transition: all 0.2s;
-  outline-offset: 0.8em;
-  border: 5px solid #55c57a;
-  margin-top: -35px;
-}
-.vision_img_5 {
-  height: 100%;
-  background:
-    url("/public/IMG-0060.JPG");
-  background-size: cover;
-  background-repeat: no-repeat;
-  flex: 1;
-  z-index: 20;
-  transition: all 0.2s;
-  outline-offset: 0.8em;
-  border: 5px solid #55c57a;
-}
-.vision_img_6 {
-  height: 100%;
-  background:
-    url("/public/IMG-0084.JPG");
-  background-size: cover;
-  background-repeat: no-repeat;
-  flex: 1;
-  z-index: 20;
-  transition: all 0.2s;
-  outline-offset: 0.8em;
-  border: 5px solid #55c57a;
-  margin-top: 35px;
-}
-.vision_img_7 {
-  height: 100%;
-  background:
-    url("/public/group/IMG_4277.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  flex: 1;
-  z-index: 20;
-  transition: all 0.2s;
-  outline-offset: 0.8em;
-  border: 5px solid #55c57a;
-  margin-top: -30px;
-}
-.vision_img_8 {
-  height: 100%;
-  background:
-    url("/public/group/IMG_4227.JPG");
-  background-size: cover;
-  background-repeat: no-repeat;
-  flex: 1;
-  z-index: 20;
-  transition: all 0.2s;
-  outline-offset: 0.8em;
-  border: 5px solid #55c57a;
-}
-
-.vision_img_1:hover,
-.vision_img_2:hover,
-.vision_img_3:hover,
-.vision_img_4:hover,
-.vision_img_5:hover,
-.vision_img_6:hover,
-.vision_img_7:hover,
-.vision_img_8:hover {
-   outline: 10px solid #55c57a;
-  transform: scale(1.1);
-  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  border: 0;
-}
-
-.our_pastor {
-  display: flex;
-  gap: 4em;
-  padding: 60px 5% 80px;
+  flex-direction: row-reverse;
+  align-items: flex-start;
   background: linear-gradient(
     to right bottom,
     rgba(28, 76, 19, 0.222),
     rgba(40, 180, 133, 0.202)
   );
-  /* background-color: #07182a; */
-  /* background-color: #d8f4cd; */
+  gap: 3em;
+  padding: 60px 4% 80px;
+}
+
+.our_pastor {
+  flex: 1.5;
+  display: flex;
+  background: linear-gradient(
+    to right bottom,
+    rgba(28, 76, 19, 0.222),
+    rgba(40, 180, 133, 0.202)
+  );
+  gap: 2em;
+  padding: 60px 4% 80px;
   color: black;
   text-align: justify;
 }
 
 .pastor_text {
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -318,6 +229,7 @@
   font-size: 2em;
   text-decoration: underline 2px black;
   border-bottom: none;
+  color: var(--primary-dark-color);
   /* color: #ffffff; */
 }
 
@@ -326,12 +238,6 @@
 }
 
 .pastor_img {
-  width: 40%;
-  background-image: url("/public/desmond-jummy.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* border: 4px solid var(--secondary-color); */
-  /* box-shadow: 10px 10px 0px var(--secondary-color); */
 }
 
 .pst_pic {
