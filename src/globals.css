@@ -243,9 +243,11 @@ input {
   height: 85vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 3em;
   position: relative;
   background: linear-gradient(
       to right bottom,
@@ -271,9 +273,9 @@ input {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 90vh;
-  gap: 3em;
+  gap: 1em;
   color: #ffffff;
+  padding-top: 50px;
 }
 
 .intro p {
@@ -289,8 +291,8 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
-  gap: 0.7em;
+  align-items: center;
+  gap: 0em;
 }
 
 .name {

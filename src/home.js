@@ -21,6 +21,13 @@ const Home = () => {
         <section className="banner_section">
           <div className="intro">
             <motion.div className="welcome">
+              <img
+                src="/Fortress-Logo.png"
+                alt="logo"
+                width="100px"
+                height="100px"
+                // className="logo"
+              />
               <motion.div
                 initial={{ x: 10 }}
                 whileInView={{
@@ -73,18 +80,18 @@ const Home = () => {
               mandate is to make ready a people ready for the Lord. <br></br>{" "}
               (Luke 1:17) */}
             </motion.div>
-            <div className="banner_buttons">
-              {/* <Link to="">
+            {/* <div className="b_img"></div> */}
+          </div>
+          <div className="banner_buttons">
+            {/* <Link to="">
                   <button className="join">JOIN US</button>
                 </Link> */}
-              <Link to="">
-                <button className="sermon">WATCH A SERMON</button>
-              </Link>
-              {/* <Link to="">
+            <Link to="">
+              <button className="sermon">WATCH A SERMON</button>
+            </Link>
+            {/* <Link to="">
                   <button className="sermon">GIVE</button>
                 </Link> */}
-            </div>
-            {/* <div className="b_img"></div> */}
           </div>
         </section>
         <section className="motto">
