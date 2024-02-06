@@ -42,8 +42,8 @@ const Header = () => {
           <img
             src="/Fortress-Logo.png"
             alt="logo"
-            width={80}
-            height={80}
+            width={50}
+            height={50}
             className="logo"
           />
         </div>

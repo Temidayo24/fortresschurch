@@ -283,9 +283,6 @@ input {
 }
 
 .welcome {
-  /* text-align: center; */
-  /* text-align: left; */
-  /* padding-left: 4%; */
   font-size: 1.2em;
   text-transform: capitalize;
   display: flex;
