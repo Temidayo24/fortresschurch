@@ -702,7 +702,7 @@ font-weight: 800;
 .service-title span:nth-of-type(1) {
   width: fit-content;
   padding: 10px 10px;
-  background-color: #6fbf50c8;
+  background-color: #6fbf507d;
   position: absolute;
   top: 45%;
   z-index: 100;
@@ -712,7 +712,7 @@ font-weight: 800;
   padding: 10px 0px;
   width: fit-content;
   padding: 8px 10px;
-  background-color: #ffffffce;
+  background-color: #0000006d;
   color: var(--primary-dark-color);
   position: absolute;
   top: 70%;
