@@ -1,9 +1,10 @@
 .contact_section {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right bottom,
     rgba(28, 76, 19, 0.222),
     rgba(40, 180, 133, 0.202)
-  );
+  ); */
+  background: var(--contrast-color);
   height: 100%;
   padding: 150px 0 0;
 }
@@ -42,7 +43,7 @@
       90deg,
       transparent 0%,
       transparent 50%,
-      rgba(255, 255, 255, 0.687) 50%
+      rgba(255, 255, 255, 0.533) 50%
     ),
     url("/public/group/IMG_3696.jpg");
   background-size: cover;

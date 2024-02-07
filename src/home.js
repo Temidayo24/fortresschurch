@@ -80,6 +80,21 @@ const Home = () => {
               mandate is to make ready a people ready for the Lord. <br></br>{" "}
               (Luke 1:17) */}
             </motion.div>
+            <motion.div
+              initial={{ x: -200 }}
+              whileInView={{
+                x: 0,
+                transition: {
+                  type: "spring",
+                  duration: 1.5,
+                  bounce: 0.4,
+                  // delay: 0.5,
+                },
+              }}
+              viewport={{ once: true }}
+            >
+              Bringing Divinity to Humanity...
+            </motion.div>
             {/* <div className="b_img"></div> */}
           </div>
           <div className="banner_buttons">
@@ -93,23 +108,6 @@ const Home = () => {
                   <button className="sermon">GIVE</button>
                 </Link> */}
           </div>
-        </section>
-        <section className="motto">
-          <motion.div
-            initial={{ x: -200 }}
-            whileInView={{
-              x: 0,
-              transition: {
-                type: "spring",
-                duration: 1.5,
-                bounce: 0.4,
-                // delay: 0.5,
-              },
-            }}
-            viewport={{ once: true }}
-          >
-            Bringing Divinity to Humanity...
-          </motion.div>
         </section>
         {/* <div className="updates_section">
           <motion.div
@@ -271,7 +269,8 @@ const Home = () => {
             >
               <div className="services">
                 <Services
-                  title="Sunday Service"
+                  title1="Sunday"
+                  title2="Service"
                   days="Sundays"
                   time="8:30 am"
                   text1="2nd Floor, 10 Coker Rd, Opposite Chicken Republic, Ilupeju, Lagos."
@@ -290,7 +289,8 @@ const Home = () => {
               </div>
               <div className=" services">
                 <Services
-                  title="Fresh Word"
+                  title1="Fresh"
+                  title2="Word"
                   days="Tuesdays and Thursdays"
                   time="12:00 pm"
                   text3="@thefortresschurch"
@@ -305,7 +305,8 @@ const Home = () => {
               </div>
               <div className=" services">
                 <Services
-                  title="Midweek Service"
+                  title1="Midweek"
+                  title2="Service"
                   days="Wednesdays"
                   time="6:00 pm"
                   text1="2nd Floor, 10 Coker Rd, Opposite Chicken Republic, Ilupeju, Lagos."
@@ -324,7 +325,8 @@ const Home = () => {
               </div>
               <div className="services">
                 <Services
-                  title="Apostolic Prayer Meeting"
+                  title1="Apostolic"
+                  title2="Prayer Meeting"
                   days="Fridays"
                   time="6:30 pm"
                   text3="@thefortresschurch"
@@ -339,7 +341,8 @@ const Home = () => {
               </div>
               <div className="services">
                 <Services
-                  title="Fresh Dew"
+                  title1="Fresh"
+                  title2="Dew"
                   days="Saturdays"
                   time="6:00 am"
                   text3="@thefortresschurch"

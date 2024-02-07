@@ -13,10 +13,10 @@
   );
 
   --primary-dark-color: #6fbf50;
-  --primary-dark-transparent: #042718;
+  --primary-dark-transparent: #333333;
   --secondary-color: #ef2f34;
-  --contrast-color: #ffe6e2;
-  --body-color: #ffffff;
+  --contrast-color: #b6f5a8a3;
+  --body-color: #efff99;
   --font-cookie: "Cookie";
   --font-lato: "Lato";
   --font-barlow: "Barlow";
@@ -102,11 +102,12 @@ input {
 }
 
 .header_nav_scrolled {
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right bottom,
     rgb(28, 76, 19),
     rgb(40, 180, 133)
-  );
+  ); */
+  background: var(--primary-dark-transparent);
   position: fixed;
   top: 0;
   z-index: 1000000;
@@ -169,7 +170,7 @@ input {
 .nav_ul .active-link {
   color: var(--primary-dark-color);
   text-decoration: none;
-  border-bottom: 1px solid var(--primary-dark-color);
+  /* border-bottom: 1px solid var(--primary-dark-color); */
   padding: 25px 8px 5px;
   /* background-color: var(--primary-dark-transparent); */
 }
@@ -249,16 +250,13 @@ input {
   text-align: center;
   gap: 5em;
   position: relative;
-  background: linear-gradient(
-      to right bottom,
-      rgba(28, 76, 19, 0.807),
-      rgba(40, 180, 133, 0.8)
-    ),
+  background: linear-gradient(180deg, #204910, #b6f5a881),
     url(/public/group/IMG_4197.jpg);
   /* background-color: var(--primary-dark-transparent); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+  /* box-shadow: 5px 10px 30px #0000005e; */
   /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); */
 }
 
@@ -419,6 +417,7 @@ h3 {
   align-items: center;
   gap: 5em;
   text-align: justify;
+  background: var(--contrast-color);
   position: relative;
 }
 
@@ -543,12 +542,13 @@ h3 {
 
 .services-section-skew {
   /* transform: skewY(-4deg); */
-  background: linear-gradient(
+  /* background: linear-gradient(
       to right bottom,
       rgba(28, 76, 19, 0.807),
       rgba(40, 180, 133, 0.8)
     ),
-    url(/public/bible.jpg);
+    url(/public/bible.jpg); */
+  /* background-color: var(--primary-dark-transparent); */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -563,6 +563,7 @@ h3 {
   justify-content: center;
   gap: 4em;
   background-color: #0b202c00;
+  border-top: 1px solid #0000002b;
   /* transform: skewY(4deg); */
 }
 
@@ -571,21 +572,21 @@ h3 {
 }
 
 .services_section h3 {
-  color: white;
+  color: #042718;
 }
 
 .services_flex {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 1em;
+  gap: 0.5em;
   width: 100%;
-  padding: 10px 50px;
+  padding: 0px 50px;
 }
 
 .services {
-  border: 1px solid #ffffff;
   border-radius: 3px;
-  height: 250px;
+  background-color: #ffffff;
+  height: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -606,6 +607,7 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   color: #000000;
+  position: relative;
 }
 
 .service_logo {
@@ -617,112 +619,68 @@ h3 {
   height: 50%;
 }
 
-.service-img1 {
-  /* background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.242) 50%,
-      rgba(0, 0, 0, 0.544) 100%
-    ),
-    url(/public/IMG-0085.JPG); */
-  background-color: var(--primary-dark-transparent);
-  background-size: cover;
-  background-repeat: no-repeat;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-}
-
-.service-img2 {
-  /* background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.242) 50%,
-      rgba(0, 0, 0, 0.544) 100%
-    ),
-    url(/public/bible.jpg); */
-  background-color: var(--primary-dark-transparent);
-  background-size: cover;
-  background-repeat: no-repeat;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-}
-.service-img3 {
-  /* background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.242) 50%,
-      rgba(0, 0, 0, 0.544) 100%
-    ),
-    url(/public/IMG-0083.JPG); */
-  background-color: var(--primary-dark-transparent);
-  background-size: cover;
-  background-repeat: no-repeat;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-}
-.service-img4 {
-  /* background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.242) 50%,
-      rgba(0, 0, 0, 0.544) 100%
-    ),
-    url(/public/IMG-0084.JPG); */
-  background-color: var(--primary-dark-transparent);
-  background-size: cover;
-  background-repeat: no-repeat;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-}
-.service-img5 {
-  /* background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.242) 50%,
-      rgba(0, 0, 0, 0.544) 100%
-    ),
-    url(/public/IMG-0080.JPG); */
-  background-color: var(--primary-dark-transparent);
-  background-size: cover;
-  background-repeat: no-repeat;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-}
-
-.services6 {
-  grid-area: f;
-  background-color: white;
-  height: auto;
-  border: 2px solid var(--primary-dark-color);
-}
-
-.services7 {
-  grid-area: g;
-  background-color: white;
-  height: auto;
-  border: 2px solid var(--primary-dark-color);
-}
-
-.services6 .service_name,
-.services7 .service_name {
-  color: var(--primary-dark-color);
-}
-
 .service-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+  align-items: flex-end;
+  text-align: right;
   line-height: 1em;
   color: #ffffff;
   font-weight: 800;
-  border-bottom: 1px solid #faf8fa60;
-  padding-bottom: 7px;
+  height: 150px;
+  /* border-bottom: 1px solid #00000060; */
+  padding: 15px 0px;
+  position: relative;
+  background: linear-gradient(to right bottom, #7ed56fb6, #28b485a7),
+    url(/public/bible.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px 4px 0 0;
 }
 
-.services-text span:nth-of-type(2) {
+.service-title span:nth-of-type(1) {
+  width: fit-content;
+  padding: 10px 10px;
+  background-color: #55c57a;
+  position: absolute;
+  top: 45%;
+  z-index: 100;
+}
+
+.service-title span:nth-of-type(2) {
+  padding: 10px 0px;
+  width: fit-content;
+  padding: 8px 10px;
+  background-color: #ffffff;
+  color: #55c57a;
+  position: absolute;
+  top: 70%;
+  z-index: 100;
+  /* font-size: 1.2em; */
+}
+
+.time-day {
+  display: flex;
+  flex-direction: column;
+  line-height: 1em;
+  /* color: #ffffff; */
+  font-weight: 800;
+  padding: 30px 10px 0px;
+  opacity: 0.7;
+}
+
+.time-day span:nth-of-type(1) {
   font-style: italic;
-  color: #ffffff;
-  border-bottom: 1px solid #faf8fa60;
-  padding-bottom: 7px;
-
-  /* font-weight: 800; */
-  /* font-family: "Cookie";
-    font-size: 1.5em; */
+  border-bottom: 1px solid #0000003a;
+  padding: 16px 0px;
 }
 
-.services-text span:nth-of-type(1) {
-  font-size: 1.4em;
-  color: #ffffff;
-  opacity: 0.8;
-  border-bottom: 1px solid #faf8fa60;
-  padding-bottom: 7px;
+.time-day span:nth-of-type(2) {
+  font-size: 1em;
+  color: #000000;
+  border-bottom: 1px solid #0000003a;
+  padding: 16px 0px;
 }
 
 .icon-text-container {
@@ -744,7 +702,7 @@ h3 {
   border: 0;
   /* border: 1px solid #bc3433; */
   border-radius: 2px;
-  background-color: #fffffff1;
+  /* background-color: #000000; */
   padding: 4px;
   height: fit-content;
   /* font-weight: 700; */
@@ -754,17 +712,14 @@ h3 {
   display: flex;
   flex-direction: column;
   height: fit-content;
-  /* justify-content: space-between; */
   text-align: center;
-  gap: 1em;
   font-size: 1.1em;
   height: 100%;
-  padding: 30px 10px 0px;
 }
 
 .services_container p,
 .services_container2 p {
-  font-size: 1.5em;
+  font-size: 1.3em;
   /* font-weight: 900; */
 }
 
@@ -820,19 +775,20 @@ h3 {
 }
 
 .give_section {
-  padding: 20px 20px 100px;
+  padding: 100px 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2em;
+  background-color: var(--primary-dark-color);
 }
 
 .give_card_container {
   display: flex;
   justify-content: center;
   gap: 1em;
-  width: 80%;
+  width: 100%;
 }
 
 .give_card {
@@ -995,7 +951,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   gap: 1em;
-    /* font-weight: bold; */
+  /* font-weight: bold; */
 }
 
 .quicklinks h5 {
@@ -1019,7 +975,7 @@ h3 {
   padding: 6px 5px;
   font-size: 1em;
   border-bottom: 0.5px solid white;
-    font-weight: bold;
+  font-weight: bold;
   /* opacity: 0.5; */
 }
 
@@ -1072,7 +1028,7 @@ h3 {
 }
 
 .footer-address span {
-font-size: 2em;
+  font-size: 2em;
   font-weight: 800;
 }
 

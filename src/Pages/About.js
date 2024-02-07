@@ -31,7 +31,7 @@ const About = () => {
             ABOUT THE FORTRESS INT&#39;L CHURCH
           </motion.div>
         </section>
-        <section className="motto">
+        {/* <section className="motto">
           <motion.div
             initial={{ x: -200 }}
             whileInView={{
@@ -47,7 +47,7 @@ const About = () => {
           >
             Bringing Divinity to Humanity...
           </motion.div>
-        </section>
+        </section> */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{
