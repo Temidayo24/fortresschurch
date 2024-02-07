@@ -554,7 +554,7 @@ h3 {
 }
 
 .services_section {
-  padding: 50px 0 150px;
+  padding: 150px 0;
   /* border-radius: 15px; */
   height: fit-content;
   display: flex;
