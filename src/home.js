@@ -383,7 +383,7 @@ const Home = () => {
             Give
             <span>Want to expand God's kingdom?</span>
           </div>
-          <div className="give_card_container">
+          {/* <div className="give_card_container">
             <div className="give_card">
               <div className="give_card_img">
                 <img alt=" " src="" />
@@ -402,7 +402,7 @@ const Home = () => {
               </div>
               <span>Give</span>
             </div>
-          </div>
+          </div> */}
         </section>
         <Contact />
       </main>
