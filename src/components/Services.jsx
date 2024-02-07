@@ -18,7 +18,7 @@ const Services = ({title1, title2, days, text1, text2, text3, time, classname, p
       <div className="icon-text-container">
         {path.map((icon, index) => (
           <Link to={icon.to} className="icon-text" key={index}>
-            <img src={icon.src} alt="location_icon" width={30} height={30} />
+            <img src={icon.src} alt="location_icon" />
           </Link>
         ))}
       </div>

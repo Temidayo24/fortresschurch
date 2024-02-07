@@ -244,7 +244,6 @@ const Home = () => {
           <section className="services_section" id="services">
             <div className="title">
               <h3>Worship With US</h3>
-              <span>Come have an unforgettable experience</span>
             </div>
             <motion.div
               initial={{ x: -200 }}
@@ -267,6 +266,12 @@ const Home = () => {
               }}
               className="services_flex"
             >
+              <div className="services first-card">
+                <span>
+                  Experience a profound encounter with the word of God that will
+                  forever transform your life.
+                </span>
+              </div>
               <div className="services">
                 <Services
                   title1="Sunday"
