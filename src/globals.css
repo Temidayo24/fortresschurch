@@ -554,7 +554,7 @@ h3 {
 }
 
 .services_section {
-  padding: 100px 0 150px;
+  padding: 50px 0 150px;
   /* border-radius: 15px; */
   height: fit-content;
   display: flex;
@@ -583,6 +583,8 @@ h3 {
 
 .services_section h3 {
   color: #042718;
+  text-align: left;
+display: none;
 }
 
 .services_flex {
@@ -611,12 +613,18 @@ h3 {
 }
 
 .first-card {
+   display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 background: var(--primary-dark-color) !important;
 color: #000000;
 padding: 0px 60px;
-font-size: 2em;
 /* font-family: "serif"; */
 font-weight: 800;
+}
+
+.first-card span {
+  font-size: 2em;
 }
 
 /* .services:hover {
