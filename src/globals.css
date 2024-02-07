@@ -588,7 +588,7 @@ h3 {
 .services_flex {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2em;
+  gap: 1em;
   width: 100%;
   padding: 0px 50px;
 }
