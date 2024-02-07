@@ -17,7 +17,7 @@
   --secondary-color: #ef2f34;
   --contrast-color: #b6f5a836;
   --body-color: #efff99;
-  --font-cookie: "Cookie";
+  --font-cookie: "Cookie, sans-serif";
   --font-lato: "Lato";
   --font-barlow: "Barlow";
   --font-ultra: "Ultra";
@@ -604,10 +604,6 @@ display: none;
   align-items: center;
   justify-content: center;
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
-   background: linear-gradient(to right bottom, #04271870, #04271864),
-    url(/public/bible.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 20px;
   padding-bottom: 30px;
 }
@@ -625,6 +621,41 @@ font-weight: 800;
 
 .first-card span {
   font-size: 2em;
+}
+
+.services:nth-of-type(2) {
+ background: linear-gradient(to right bottom, #04271836, #04271810),    url(/public/IMG_4697.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.services:nth-of-type(3) {
+ background: linear-gradient(to right bottom, #04271836, #04271810),    url(/public/IMG-0080.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.services:nth-of-type(4) {
+ background: linear-gradient(to right bottom, #04271836, #04271810),    url(/public/IMG_4629.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.services:nth-of-type(5) {
+ background: linear-gradient(to right bottom, #04271836, #04271810),    url(/public/IMG_4525.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.services:nth-of-type(6) {
+ background: linear-gradient(to right bottom, #04271836, #04271810),
+    url(/public/IMG-0085.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* .services:hover {
@@ -671,7 +702,7 @@ font-weight: 800;
 .service-title span:nth-of-type(1) {
   width: fit-content;
   padding: 10px 10px;
-  background-color: #6fbf50c2;
+  background-color: #6fbf50c8;
   position: absolute;
   top: 45%;
   z-index: 100;
@@ -681,7 +712,7 @@ font-weight: 800;
   padding: 10px 0px;
   width: fit-content;
   padding: 8px 10px;
-  background-color: #ffffffe4;
+  background-color: #ffffffce;
   color: var(--primary-dark-color);
   position: absolute;
   top: 70%;
@@ -696,6 +727,7 @@ font-weight: 800;
   color: #ffffff;
   font-weight: 800;
   padding: 0px 10px 0px;
+  text-align: right;
   /* opacity: 0.7; */
   background-color: #00000053;
 }
@@ -715,7 +747,7 @@ font-weight: 800;
 
 .icon-text-container {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   gap: 0.1em;
    background-color: #00000053;
