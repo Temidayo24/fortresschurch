@@ -733,16 +733,17 @@ font-weight: 800;
 }
 
 .time-day span:nth-of-type(1) {
+   font-size: 1.3em;
   /* font-style: italic; */
-  border-bottom: 1px solid #ffffff3f;
-  padding: 16px 0px;
+  /* border-bottom: 1px solid #ffffff3f; */
+  padding: 10px 0px;
 }
 
 .time-day span:nth-of-type(2) {
-  font-size: 1em;
+  font-size: 1.3em;
   /* color: #000000; */
- border-bottom: 1px solid #ffffff3f;
-   padding: 16px 0px;
+ /* border-bottom: 1px solid #ffffff3f; */
+   padding: 10px 0px;
 }
 
 .icon-text-container {
