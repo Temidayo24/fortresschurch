@@ -250,7 +250,7 @@ input {
   text-align: center;
   gap: 5em;
   position: relative;
-  background: linear-gradient(180deg, #204910, #071c0281),
+  background: linear-gradient(180deg, #204910e9, #071c0281),
     url(/public/grace.jpg);
   /* background-color: var(--primary-dark-transparent); */
   background-size: cover;
