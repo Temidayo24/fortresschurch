@@ -16,11 +16,14 @@ const Services = ({title1, title2, days, text1, text2, text3, time, classname, p
         </div>
       </div>
       <div className="icon-text-container">
-        {path.map((icon, index) => (
-          <Link to={icon.to} className="icon-text" key={index}>
-            <img src={icon.src} alt="location_icon" />
-          </Link>
-        ))}
+        <span className="icon-text">Join us →</span>
+        <div className="icons">
+          {path.map((icon, index) => (
+            <Link to={icon.to} target='_blank' className="icon-img" key={index}>
+              <img src={icon.src} alt="location_icon" />
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );

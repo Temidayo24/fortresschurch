@@ -11,7 +11,6 @@ import { useState } from "react";
 // import React, { useState, useClient } from 'react'
 
 const Home = () => {
-
   const [hasViewed, setHasViewed] = useState(false);
 
   return (
@@ -285,11 +284,17 @@ const Home = () => {
                   text2="@thefortresschurch"
                   text3="The Fortress International Church"
                   path={[
-                    { to: "", src: "/icons/church.png" },
-                    { to: "", src: "/icons/youtube.svg" },
+                    {
+                      to: "https://maps.app.goo.gl/tbnrx6FzBw2URBWs6",
+                      src: "/icons/location.png",
+                    },
+                    {
+                      to: "https://www.youtube.com/@thefortresschurch",
+                      src: "/icons/youtube.png",
+                    },
                     {
                       to: "https://thefortresschurch.mixlr.com",
-                      src: "/icons/mixlr.svg",
+                      src: "/icons/mixlr.png",
                     },
                   ]}
                   classname="services_container"
@@ -305,7 +310,7 @@ const Home = () => {
                   path={[
                     {
                       to: "https://thefortresschurch.mixlr.com",
-                      src: "/icons/mixlr.svg",
+                      src: "/icons/mixlr.png",
                     },
                   ]}
                   classname="services_container"
@@ -321,11 +326,14 @@ const Home = () => {
                   text2="@thefortresschurch"
                   text3="The Fortress International Church"
                   path={[
-                    { to: "", src: "/icons/church.png" },
-                    { to: "", src: "/icons/youtube.svg" },
+                    {
+                      to: "https://maps.app.goo.gl/tbnrx6FzBw2URBWs6",
+                      src: "/icons/location.png",
+                    },
+                    { to: "", src: "/icons/youtube.png" },
                     {
                       to: "https://thefortresschurch.mixlr.com",
-                      src: "/icons/mixlr.svg",
+                      src: "/icons/mixlr.png",
                     },
                   ]}
                   classname="services_container"
@@ -341,7 +349,7 @@ const Home = () => {
                   path={[
                     {
                       to: "https://thefortresschurch.mixlr.com",
-                      src: "/icons/mixlr.svg",
+                      src: "/icons/mixlr.png",
                     },
                   ]}
                   classname="services_container"
@@ -357,7 +365,7 @@ const Home = () => {
                   path={[
                     {
                       to: "https://thefortresschurch.mixlr.com",
-                      src: "/icons/mixlr.svg",
+                      src: "/icons/mixlr.png",
                     },
                   ]}
                   classname="services_container"
