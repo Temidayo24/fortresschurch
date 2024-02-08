@@ -250,12 +250,12 @@ input {
   text-align: center;
   gap: 5em;
   position: relative;
-  background: linear-gradient(180deg, #204910, #b6f5a881),
+  background: linear-gradient(180deg, #204910, #071c0281),
     url(/public/grace.jpg);
   /* background-color: var(--primary-dark-transparent); */
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
   /* box-shadow: 5px 10px 30px #0000005e; */
   /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); */
 }
