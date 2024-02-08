@@ -885,9 +885,14 @@ font-size: 1.1em;
   text-align: center;
 }
 
-.give-head-text span {
+.give-sub-text {
    font-size: 1.2em;
   font-weight: 500;
+}
+
+.give-sub-text span{
+  color: var(--primary-dark-color);
+  font-weight: 800;
 }
 
 .give_card {

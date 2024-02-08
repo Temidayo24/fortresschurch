@@ -385,10 +385,10 @@ const Home = () => {
         <section className="give_section" id="give">
           <div className="give-head-text">
             <h3>Want to expand God's kingdom?</h3>
-            <span>
+            <span className="give-sub-text">
               Join us in advancing God's kingdom by faithfully giving your
-              offerings, tithes, pledges, and donations through the following
-              mediums.
+              <span> offerings</span>,<span> tithes</span>, <span>pledges</span>
+              , and <span>donations</span> through the following mediums.
             </span>
           </div>
           <div className="give_card_container">
