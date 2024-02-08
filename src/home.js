@@ -43,22 +43,6 @@ const Home = () => {
                 The Fortress
               </motion.div>
               <motion.div
-                // initial="hidden"
-                // animate="visible"
-                // variants={{
-                //   hidden: {
-                //     scale: 0.9,
-                //     opacity: 0,
-                //   },
-                //   visible: {
-                //     scale: 1,
-                //     opacity: 1,
-                //     transition: {
-                //       duration: 0.5,
-                //       ease: easeIn,
-                //     },
-                //   },
-                // }}
                 initial={{ x: -10 }}
                 whileInView={{
                   x: 0,
@@ -73,11 +57,6 @@ const Home = () => {
               >
                 Int&#39;l Church
               </motion.div>
-              {/* Welcome to{" "} */}
-              {/* <span className="name">The Fortress Int&#39;l Church</span> where
-              our <br />
-              mandate is to make ready a people ready for the Lord. <br></br>{" "}
-              (Luke 1:17) */}
             </motion.div>
             <motion.div
               initial={{ x: -200 }}
@@ -87,7 +66,7 @@ const Home = () => {
                   type: "spring",
                   duration: 1.5,
                   bounce: 0.4,
-                  // delay: 0.5,
+                  delay: 0.2,
                 },
               }}
               viewport={{ once: true }}
@@ -97,15 +76,12 @@ const Home = () => {
             {/* <div className="b_img"></div> */}
           </div>
           <div className="banner_buttons">
-            {/* <Link to="">
-                  <button className="join">JOIN US</button>
-                </Link> */}
-            <Link to="">
+            <Link
+              to="https://www.youtube.com/@thefortresschurch"
+              target="_blank"
+            >
               <button className="sermon">WATCH A SERMON</button>
             </Link>
-            {/* <Link to="">
-                  <button className="sermon">GIVE</button>
-                </Link> */}
           </div>
         </section>
         {/* <div className="updates_section">
@@ -407,30 +383,92 @@ const Home = () => {
           </Link>
         </section>
         <section className="give_section" id="give">
-          <div>
-            Give
-            <span>Want to expand God's kingdom?</span>
+          <div className="give-head-text">
+            <h3>Want to expand God's kingdom?</h3>
+            <span>
+              Join us in advancing God's kingdom by faithfully giving your
+              offerings, tithes, pledges, and donations through the following
+              mediums.
+            </span>
           </div>
-          {/* <div className="give_card_container">
+          <div className="give_card_container">
             <div className="give_card">
               <div className="give_card_img">
-                <img alt=" " src="" />
+                <img alt=" " src="/icons/first_bank.svg" />
               </div>
-              <span>Give</span>
+              <div className="bank-details">
+                <div>
+                  <span>Bank:</span>
+                  <span>First Bank</span>
+                </div>
+                <div>
+                  <span>A/C Number:</span>
+                  <span>2022269209</span>
+                </div>
+                <div>
+                  <span>A/C Name:</span>
+                  <span>Lifefort International Ministry</span>
+                </div>
+              </div>
             </div>
             <div className="give_card">
               <div className="give_card_img">
-                <img alt=" " src="" />
+                <img alt=" " src="/icons/first_bank.svg" />{" "}
               </div>
-              <span>Give</span>
+              <div className="bank-details">
+                <div>
+                  <span>Bank:</span>
+                  <span>First Bank</span>
+                </div>
+                <div>
+                  <span>A/C Number:</span>
+                  <span>2022269209</span>
+                </div>
+                <div>
+                  <span>A/C Name:</span>
+                  <span>Lifefort International Ministry</span>
+                </div>
+              </div>
             </div>
             <div className="give_card">
               <div className="give_card_img">
-                <img alt=" " src="" />
+                <img alt=" " src="/icons/first_bank.svg" />{" "}
               </div>
-              <span>Give</span>
+              <div className="bank-details">
+                <div>
+                  <span>Bank:</span>
+                  <span>First Bank</span>
+                </div>
+                <div>
+                  <span>A/C Number:</span>
+                  <span>2022269209</span>
+                </div>
+                <div>
+                  <span>A/C Name:</span>
+                  <span>Lifefort International Ministry</span>
+                </div>
+              </div>
             </div>
-          </div> */}
+            <div className="give_card">
+              <div className="give_card_img">
+                <img alt=" " src="/icons/first_bank.svg" />
+              </div>
+              <div className="bank-details">
+                <div>
+                  <span>Bank:</span>
+                  <span>First Bank</span>
+                </div>
+                <div>
+                  <span>A/C Number:</span>
+                  <span>2022269209</span>
+                </div>
+                <div>
+                  <span>A/C Name:</span>
+                  <span>Lifefort International Ministry</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
         <Contact />
       </main>
