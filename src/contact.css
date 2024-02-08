@@ -1,9 +1,4 @@
 .contact_section {
-  /* background-image: linear-gradient(
-    to right bottom,
-    rgba(28, 76, 19, 0.222),
-    rgba(40, 180, 133, 0.202)
-  ); */
   background: var(--primary-dark-color);
   height: 100%;
   padding: 150px 0 0;
@@ -39,7 +34,7 @@
   width: 75%;
   height: 100%;
   border-radius: 4px 4px 0 0;
-  background-image: linear-gradient(
+  background: linear-gradient(
       90deg,
       transparent 0%,
       transparent 50%,
@@ -48,7 +43,6 @@
     url("/public/group/IMG_3696.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: var(--secondary-color);
 }
 
 .form-skewed {
@@ -156,6 +150,7 @@
   background-color: var(--primary-dark-color);
   font-size: 1.1em;
   color: white;
+  font-weight: 800;
 }
 
 .div_form button:hover {
@@ -172,4 +167,41 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--secondary-color); */
+}
+
+@media screen and (max-width: 768px) {
+  .contact_section {
+  background: var(--primary-dark-color);
+  height: 100%;
+  padding: 0 0;
+   color: #000000;
+}
+
+.contact_section h4 {
+  font-size: 1.7em;
+  letter-spacing: 0;
+  text-align: center;
+  color: #000000;
+  text-decoration: underline 2px #000000 ;
+}
+
+  .contact_container {
+    width: 100%;
+    background: none;
+}
+
+.form-skewed {
+  width: 100%;
+}
+
+.div_form {
+padding: 30px 5%;
+  align-items: center;
+}
+
+.div_form button {
+  background-color: #ffffff;
+  color: var(--primary-dark-color);
+  align-self: center;
+}
 }

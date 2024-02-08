@@ -82,7 +82,8 @@ main {
   width: 100%;
 }
 
-a {
+a,
+a button {
   cursor: pointer;
 }
 
@@ -292,7 +293,6 @@ input {
 
 .name {
   color: #ffffff;
-  /* color: #bc3433; */
   font-size: 3.5em;
   font-weight: 900;
   text-transform: uppercase;
@@ -320,14 +320,6 @@ input {
   text-transform: uppercase;
 }
 
-.banner_buttons button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 1em 2em rgba(0, 0, 0, 0.2);
-  animation: moveInBottom 0.5s ease-out 0.75s;
-  animation-fill-mode: none;
-  animation-fill-mode: backwards;
-}
-
 .banner_buttons button {
   padding: 15px 35px;
   width: fit-content;
@@ -338,6 +330,14 @@ input {
   color: #000000;
   background-color: #ffffff;
   /* font-family: var(--font-poppins); */
+}
+
+.banner_buttons button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1em 2em rgba(0, 0, 0, 0.2);
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: none;
+  animation-fill-mode: backwards;
 }
 
 .bg_img {
@@ -453,7 +453,7 @@ h3 {
 
 .about_button button {
   padding: 15px 30px;
-  width: 150px;
+  width: fit-content;
   background-color: var(--primary-dark-color);
   border: none;
   border-radius: 30px;
@@ -467,11 +467,16 @@ h3 {
   font-family: var(--font-barlow);
 } */
 
-.about_button button:hover {
+.about_button button:hover,
+.icon-text:hover,
+.elixir_section a button:hover {
   color: white;
   background-color: var(--secondary-color);
-  transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
+  transform: translateY(-3px);
+  box-shadow: 0 1em 2em rgba(0, 0, 0, 0.2);
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: none;
+  animation-fill-mode: backwards;
 }
 
 .about_images {
@@ -486,18 +491,23 @@ h3 {
   height: 100%;
 }
 
+.img-top,
+.img-middle,
+.img-bottom {
+  position: absolute;
+  height: 200px;
+  width: 55%;
+  transition: all 0.2s;
+  outline-offset: 1em;
+  border: 5px solid #55c57a;
+}
+
 .img-top {
   background-image: url(/public/group/IMG_4197.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  position: absolute;
   top: 15%;
-  height: 200px;
-  width: 55%;
   z-index: 10;
-  transition: all 0.2s;
-  outline-offset: 1em;
-  border: 5px solid #55c57a;
 }
 
 .img-top:hover,
@@ -512,32 +522,20 @@ h3 {
 
 .img-middle {
   background-image: url(/public/group/IMG_4073.jpg);
-  position: absolute;
   background-size: cover;
+  background-repeat: no-repeat;
   top: 25%;
   left: 40%;
-  background-repeat: no-repeat;
-  height: 200px;
-  width: 55%;
   z-index: 10;
-  transition: all 0.2s;
-  outline-offset: 1em;
-  border: 5px solid #55c57a;
 }
 
 .img-bottom {
   background-image: url(/public/group/IMG_4063.jpg);
-  position: absolute;
   background-size: cover;
+  background-repeat: no-repeat;
   top: 50%;
   left: 20%;
-  background-repeat: no-repeat;
-  height: 200px;
-  width: 55%;
   z-index: 20;
-  transition: all 0.2s;
-  outline-offset: 1em;
-  border: 5px solid #55c57a;
 }
 
 .services_section {
@@ -597,7 +595,7 @@ h3 {
   flex-direction: column;
   gap: 0.5em;
   background: var(--primary-dark-color) !important;
-  color: #000000;
+  color: #ffffff;
   padding: 0px 60px;
   /* font-family: "serif"; */
   font-weight: 800;
@@ -682,7 +680,7 @@ h3 {
   height: fit-content;
   /* border-bottom: 1px solid #00000060; */
   padding: 70px 0px 120px;
-    margin-left: 10px;
+  margin-left: 10px;
   position: relative;
   font-size: 1.9em;
 }
@@ -752,12 +750,13 @@ h3 {
 }
 
 .icon-text {
-padding: 10px 10px;
-background-color: var(--primary-dark-color);
-color: #ffffff;
-border-radius: 30px;
-font-weight: 800;
-font-size: 1.1em;
+  padding: 10px 10px;
+  background-color: var(--primary-dark-color);
+  color: #ffffff;
+  border-radius: 30px;
+  font-weight: 800;
+  font-size: 1.1em;
+  cursor: default;
 }
 
 .icon-img {
@@ -789,12 +788,12 @@ font-size: 1.1em;
 .elixir_section {
   background: linear-gradient(
       90deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0) 20%,
-      #6fbf50 30%,
+      transparent 0px,
+      transparent 300px,
+      #6fbf50 300px,
       rgb(0, 0, 0) 100%
     ),
-    url(/public/bible-wood.jpg);
+    url(/public/icons/file.enc);
   background-size: contain;
   background-repeat: no-repeat;
   color: #d0efb6;
@@ -809,6 +808,13 @@ font-size: 1.1em;
 .elixir_section h3 {
   color: #faf8fa;
   border-bottom: none;
+}
+
+.elixir_section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
 }
 
 .elixir_section span {
@@ -827,10 +833,6 @@ font-size: 1.1em;
   border: none;
   border-radius: 20px;
   margin-top: 10px;
-}
-
-.elixir_section a button:hover {
-  background-color: var(--secondary-color);
 }
 
 .elixir_section a button {
@@ -856,15 +858,15 @@ font-size: 1.1em;
 }
 
 .give-head-text {
-   display: flex;
-   flex-direction: column;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.8em;
   text-align: center;
 }
 
-.give-sub-text span{
+.give-sub-text span {
   color: var(--primary-dark-color);
   font-weight: 800;
 }
@@ -887,14 +889,14 @@ font-size: 1.1em;
 
 .bank-details div {
   display: flex;
-  gap: 0.3em;
+  gap: 1em;
   font-size: 1.3em;
   font-weight: 800;
-    width: 100%;
+  width: 100%;
 }
 
-.bank-details div span {
-  width: 100%;
+.bank-details div span:nth-of-type(1) {
+  width: 150px;
 }
 
 .confession {
@@ -1136,20 +1138,17 @@ font-size: 1.1em;
 }
 @media screen and (max-width: 768px) {
   h3 {
-    font-size: 2.5em;
+    font-size: 2em;
+    text-align: center;
   }
 
   .title span {
-    font-size: 0.9em;
-    opacity: 0.4;
+    font-size: 1.1em;
+    width: 100%;
   }
 
-  .intro {
-    gap: 2em;
-  }
-
-  .intro p {
-    font-size: 1em;
+  .banner_section {
+    background: var(--primary-dark-transparent);
   }
 
   .welcome {
@@ -1160,12 +1159,7 @@ font-size: 1.1em;
   }
 
   .name {
-    /* color: #ffffff; */
-    color: #bc3433;
-    font-size: 2em;
-    font-weight: 900;
-    text-transform: uppercase;
-    /* color: var(--primary-dark-color); */
+    font-size: 2.5em;
   }
 
   .banner_buttons {
@@ -1176,14 +1170,8 @@ font-size: 1.1em;
 
   .banner_buttons button {
     padding: 8px 13px;
-    width: 200px;
     height: 45px;
-    border: 2px solid white;
-    border-radius: 5px;
     font-size: 1em;
-    color: #faf8fa;
-    background-color: var(--primary-dark-color);
-    font-family: var(--font-poppins);
   }
 
   .updates_section {
@@ -1255,24 +1243,18 @@ font-size: 1.1em;
     height: 100%;
   }
 
-  .img-top {
-    position: relative;
-    top: 0%;
-    width: 50%;
-    height: 220px;
-    background-position: center;
-  }
+  .img-top,
+  .img-middle,
   .img-bottom {
+    flex: 1;
     position: relative;
-    top: 0%;
-    left: 0%;
-    width: 50%;
-    height: 230px;
+    left: 0;
+    height: 220px;
     background-position: center;
   }
 
   .services_section {
-    padding: 70px 4%;
+    padding: 70px 20px;
     gap: 1em;
     text-align: center;
   }
@@ -1280,42 +1262,36 @@ font-size: 1.1em;
   .services_flex {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.4em;
+    gap: 1em;
     width: 100%;
     padding: 10px 0%;
   }
 
   .services_container {
-    opacity: 0;
-  }
-
-  .services:hover .services_container {
-    gap: 1em;
-    padding: 25px 10px;
+    /* opacity: 0; */
   }
 
   .services {
-    height: 200px;
     width: 100%;
   }
 
-  .service_name {
-    font-size: 1.4em;
+  .first-card {
+    display: none;
   }
 
   .icon-text-container {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     background-color: white;
-    padding: 10px;
+    padding: 10px; */
   }
 
   .icon-text {
-    display: flex;
+    /* display: flex;
     align-items: center;
     gap: 0.3em;
     font-size: 0.7em;
-    color: black;
+    color: black; */
     /* font-weight: 700; */
   }
 
@@ -1350,6 +1326,23 @@ font-size: 1.1em;
 
   .elixir_section button {
     font-size: 1.1em;
+  }
+
+  .give_card_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .give_card_img {
+    height: 50px;
+  }
+
+  .bank-details div {
+    font-size: 1em;
+  }
+
+  .bank-details div span:nth-of-type(1) {
+    width: 100px;
   }
 
   .landing-contact-section {
@@ -1458,9 +1451,9 @@ font-size: 1.1em;
   }
 
   .footer_socials {
-    align-items: center;
+    align-items: left;
     justify-content: center;
-    /* flex-direction: column; */
+    text-align: left;
     gap: 1em;
     width: 100%;
   }
@@ -1473,12 +1466,9 @@ font-size: 1.1em;
 
   .socials_container {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    align-self: center;
     align-items: center;
-    gap: 1em;
+    gap: 0.2em;
   }
 
   .socials {
@@ -1493,6 +1483,14 @@ font-size: 1.1em;
   .socials:hover {
     opacity: 1;
     color: var(--primary-dark-color);
+  }
+
+  .lets-get-in-touch span:nth-of-type(1) {
+    font-size: 1.5em;
+  }
+
+  .footer-address span {
+    font-size: 1.5em;
   }
 }
 

@@ -246,8 +246,8 @@ const Home = () => {
           >
             <div className="services first-card">
               <span>
-                Experience a profound encounter with the word of God that will
-                forever transform your life.
+                Discover the transformative power of God's word in a whole new
+                light.
               </span>
             </div>
             <div className="services">
@@ -376,10 +376,12 @@ const Home = () => {
         </section>
         <section className="elixir_section" id="elixir-of-life">
           <h3>Daily Devotional</h3>
-          <span>ELIXIR OF LIFE</span>
-          <Link to="">
-            <button>Read</button>
-          </Link>
+          <div>
+            <span>ELIXIR OF LIFE</span>
+            <Link to="">
+              <button>Read</button>
+            </Link>
+          </div>
         </section>
         <section className="give_section" id="give">
           <div className="title">
