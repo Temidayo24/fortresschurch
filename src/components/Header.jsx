@@ -111,16 +111,13 @@ const Header = () => {
         <a href="/#contact" className="nav-link">
           Contact Us
         </a>
-        <NavLink
-          to="/give"
-          // className="give"
-          className={`give ${
-            currentRoute === "/give" ? "active-link" : "nav-link"
-          }`}
+        <a
+          href="/#give"
+          className="give nav-link"
         >
           <button> Give</button>
           {/* Give */}
-        </NavLink>
+        </a>
       </nav>
     </header>
   );
