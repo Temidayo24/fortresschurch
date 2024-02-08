@@ -217,9 +217,13 @@ const Home = () => {
         </section>
         <section className="services-section-skew">
           <section className="services_section" id="services">
-            {/* <div className="title">
+            <div className="title">
               <h3>Worship With US</h3>
-            </div> */}
+              <span>
+                Experience a profound encounter with the word of God that will
+                forever transform your life.
+              </span>
+            </div>
             <motion.div
               initial={{ x: -200 }}
               animate={
@@ -242,9 +246,6 @@ const Home = () => {
               className="services_flex"
             >
               <div className="services first-card">
-                <div className="title">
-                  <h3>Worship With US</h3>
-                </div>
                 <span>
                   Experience a profound encounter with the word of God that will
                   forever transform your life.
@@ -383,7 +384,7 @@ const Home = () => {
           </Link>
         </section>
         <section className="give_section" id="give">
-          <div className="give-head-text">
+          <div className="title">
             <h3>Want to expand God's kingdom?</h3>
             <span className="give-sub-text">
               Join us in advancing God's kingdom by faithfully giving your

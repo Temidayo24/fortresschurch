@@ -540,19 +540,6 @@ h3 {
   border: 5px solid #55c57a;
 }
 
-.services-section-skew {
-  /* transform: skewY(-4deg); */
-  /* background: linear-gradient(
-      to right bottom,
-      rgba(28, 76, 19, 0.807),
-      rgba(40, 180, 133, 0.8)
-    ),
-    url(/public/bible.jpg); */
-  /* background-color: var(--primary-dark-transparent); */
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .services_section {
   padding: 150px 0;
   /* border-radius: 15px; */
@@ -573,18 +560,14 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 0.8em;
+  width: 100%;
 }
 
 .title span {
+  width: 70%;
   font-size: 1.2em;
-  opacity: 0.8;
-  color: var(--primary-dark-transparent);
-}
-
-.services_section h3 {
-  color: #042718;
-  text-align: left;
-  display: none;
+  text-align: center;
+  /* color: var(--primary-dark-transparent); */
 }
 
 .services_flex {
@@ -855,16 +838,13 @@ font-size: 1.1em;
 }
 
 .give_section {
-  /* margin-top: 50px; */
   padding: 50px 5% 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 3em;
-  /* background-color: var(--primary-dark-color); */
   background-color: var(--contrast-color);
-  /* color: #ffffff; */
 }
 
 .give_card_container {
@@ -881,13 +861,7 @@ font-size: 1.1em;
   justify-content: center;
   align-items: center;
   gap: 0.8em;
-  width: 70%;
   text-align: center;
-}
-
-.give-sub-text {
-   font-size: 1.2em;
-  font-weight: 500;
 }
 
 .give-sub-text span{
