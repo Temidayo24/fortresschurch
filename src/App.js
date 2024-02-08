@@ -1,6 +1,7 @@
 import './globals.css';
 import './contact.css';
 import './about.css';
+import './resources.css';
 import Home from './home';
 import { Route, Routes } from 'react-router-dom';
 import Fellowship from './Pages/Fellowship';

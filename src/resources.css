@@ -1,16 +1,7 @@
 .resources_banner {
   height: 70vh;
-  display: flex;
-  align-items: center;
   width: 100%;
-  margin-top: 100px 0;
-  background-size: cover;
-  justify-content: center;
-  background-color: #001800;
-  color: white;
-  font-size: 3.5em;
-  position: relative;
-  text-align: center;
+  background-color: linear-gradient(180deg, #204910, #b6f5a881);
 }
 
 .youtube-video {
