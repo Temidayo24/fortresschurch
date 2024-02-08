@@ -151,7 +151,7 @@ const About = () => {
             </div>
             <div className="vision_img_6">
               <img
-                src="/IMG-0084.JPG"
+                src="/IMG-0084.jpg"
                 alt="members pictures"
                 className=""
               />

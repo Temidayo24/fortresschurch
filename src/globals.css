@@ -626,7 +626,7 @@ h3 {
 
 .services:nth-of-type(2) {
   background: linear-gradient(to right bottom, #04271836, #04271810),
-    url(/public/IMG_4697.JPG);
+    url(/public/IMG_4697.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -634,7 +634,7 @@ h3 {
 
 .services:nth-of-type(3) {
   background: linear-gradient(to right bottom, #04271836, #04271810),
-    url(/public/IMG-0080.JPG);
+    url(/public/IMG-0080.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -642,7 +642,7 @@ h3 {
 
 .services:nth-of-type(4) {
   background: linear-gradient(to right bottom, #04271836, #04271810),
-    url(/public/IMG_4629.JPG);
+    url(/public/IMG_4629.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -650,7 +650,7 @@ h3 {
 
 .services:nth-of-type(5) {
   background: linear-gradient(to right bottom, #04271836, #04271810),
-    url(/public/IMG_4525.JPG);
+    url(/public/IMG_4525.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -658,7 +658,7 @@ h3 {
 
 .services:nth-of-type(6) {
   background: linear-gradient(to right bottom, #04271836, #04271810),
-    url(/public/IMG-0085.JPG);
+    url(/public/IMG-0085.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
