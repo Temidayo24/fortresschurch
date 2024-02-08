@@ -251,7 +251,7 @@ input {
   gap: 5em;
   position: relative;
   background: linear-gradient(180deg, #204910, #b6f5a881),
-    url(/public/group/IMG_4197.jpg);
+    url(/public/grace.jpg);
   /* background-color: var(--primary-dark-transparent); */
   background-size: cover;
   background-repeat: no-repeat;
@@ -699,6 +699,7 @@ h3 {
   height: fit-content;
   /* border-bottom: 1px solid #00000060; */
   padding: 70px 0px 120px;
+    margin-left: 10px;
   position: relative;
   font-size: 1.9em;
 }
@@ -731,6 +732,7 @@ h3 {
   color: #ffffff;
   font-weight: 800;
   padding: 0px 10px 0px;
+  margin: 0px 10px;
   text-align: left;
   /* opacity: 0.7; */
   background-color: #00000053;
@@ -757,6 +759,7 @@ h3 {
   gap: 0.5em;
   /* background-color: #00000053; */
   padding: 10px;
+  margin-left: 10px;
 }
 
 .icons {

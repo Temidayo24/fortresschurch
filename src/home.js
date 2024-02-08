@@ -287,14 +287,17 @@ const Home = () => {
                     {
                       to: "https://maps.app.goo.gl/tbnrx6FzBw2URBWs6",
                       src: "/icons/location.png",
+                      tooltip: "Location",
                     },
                     {
                       to: "https://www.youtube.com/@thefortresschurch",
                       src: "/icons/youtube.png",
+                      tooltip: "Youtube",
                     },
                     {
                       to: "https://thefortresschurch.mixlr.com",
                       src: "/icons/mixlr.png",
+                      tooltip: "Mixlr",
                     },
                   ]}
                   classname="services_container"
@@ -311,6 +314,7 @@ const Home = () => {
                     {
                       to: "https://thefortresschurch.mixlr.com",
                       src: "/icons/mixlr.png",
+                      tooltip: "Mixlr",
                     },
                   ]}
                   classname="services_container"
@@ -329,11 +333,17 @@ const Home = () => {
                     {
                       to: "https://maps.app.goo.gl/tbnrx6FzBw2URBWs6",
                       src: "/icons/location.png",
+                      tooltip: "Location",
                     },
-                    { to: "", src: "/icons/youtube.png" },
+                    {
+                      to: "https://www.youtube.com/@thefortresschurch",
+                      src: "/icons/youtube.png",
+                      tooltip: "Youtube",
+                    },
                     {
                       to: "https://thefortresschurch.mixlr.com",
                       src: "/icons/mixlr.png",
+                      tooltip: "Mixlr",
                     },
                   ]}
                   classname="services_container"
@@ -350,6 +360,7 @@ const Home = () => {
                     {
                       to: "https://thefortresschurch.mixlr.com",
                       src: "/icons/mixlr.png",
+                      tooltip: "Mixlr",
                     },
                   ]}
                   classname="services_container"
@@ -366,6 +377,7 @@ const Home = () => {
                     {
                       to: "https://thefortresschurch.mixlr.com",
                       src: "/icons/mixlr.png",
+                      tooltip: "Mixlr",
                     },
                   ]}
                   classname="services_container"

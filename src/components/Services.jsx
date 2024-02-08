@@ -19,7 +19,7 @@ const Services = ({title1, title2, days, text1, text2, text3, time, classname, p
         <span className="icon-text">Join us →</span>
         <div className="icons">
           {path.map((icon, index) => (
-            <Link to={icon.to} target='_blank' className="icon-img" key={index}>
+            <Link to={icon.to} target='_blank' className="icon-img" key={index} title={icon.tooltip}>
               <img src={icon.src} alt="location_icon" />
             </Link>
           ))}
