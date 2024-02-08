@@ -209,9 +209,15 @@ const Home = () => {
             className="about_images"
           >
             <div className="people_img_container">
-              <div className="img-top"></div>
-              <div className="img-middle"></div>
-              <div className="img-bottom"></div>
+              <div className="img-top">
+                <img src="group/IMG_4197.jpg" alt="" />
+              </div>
+              <div className="img-middle">
+                <img src="/group/IMG_4073.jpg" alt="" />
+              </div>
+              <div className="img-bottom">
+                <img src="/group/IMG_4063.jpg" alt="" />
+              </div>
             </div>
           </motion.div>
         </section>
