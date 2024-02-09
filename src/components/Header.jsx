@@ -15,6 +15,9 @@ const Header = () => {
   };
 
   const toggleHamburger = () => [setHamburgerOpen(!hamburgerOpen)];
+  const closeMenu = () => {
+    setHamburgerOpen(false)
+  }
 
   const currentRoute = useLocation();
   const [scrolled, setScrolled] = useState(false);
@@ -67,7 +70,7 @@ const Header = () => {
         >
           Who we are
         </NavLink>
-        <a href="/#services" className="nav-link">
+        <a href="/#services" onClick={closeMenu} className="nav-link">
           Our Services
         </a>
         <div className="dropdown_parent">
@@ -106,17 +109,20 @@ const Header = () => {
                 <Link to="/green-house">Green House</Link>
               </div>
             </div> */}
-        <a href="/#elixir-of-life" className="nav-link">
+        <a href="/#elixir-of-life" onClick={closeMenu} className="nav-link">
           Elixir of Life
         </a>
-        <a href="/#contact" className="nav-link">
+        <a href="/#contact" onClick={closeMenu} className="nav-link">
           Contact Us
         </a>
-        <a href="/#give" className="give nav-link">
+        <a href="/#give" onClick={closeMenu} className="give nav-link">
           Give
         </a>
       </nav>
-      <div className={`hamburger ${hamburgerOpen ? "open" : "closed"}`} onClick={toggleHamburger}>
+      <div
+        className={`hamburger ${hamburgerOpen ? "open" : "closed"}`}
+        onClick={toggleHamburger}
+      >
         <span></span>
         <span></span>
         <span></span>
