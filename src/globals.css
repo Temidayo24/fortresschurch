@@ -574,6 +574,10 @@ h3 {
   /* transform: skewY(4deg); */
 }
 
+.mobile-service-images {
+  display: none;
+}
+
 .title {
   display: flex;
   flex-direction: column;
@@ -737,7 +741,7 @@ h3 {
   padding: 0px 10px 0px;
   margin: 0px 10px;
   text-align: left;
-   font-size: 1.3em;
+  font-size: 1.3em;
   /* opacity: 0.7; */
   background-color: #00000053;
 }
@@ -923,7 +927,7 @@ h3 {
       rgba(1, 17, 11, 0) 35%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url(/public/IMG-0069.JPG);
+    url(/public/IMG-0069.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -931,7 +935,7 @@ h3 {
   background-color: #faf8fa;
   display: flex;
   align-items: center;
-  height: 600px;
+  height: 400px;
   padding: 0% 4%;
   /* display: none; */
 }
@@ -1349,7 +1353,7 @@ h3 {
 
   .people_img_container img {
     border-radius: 10px;
-    box-shadow: 0 20px 4rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 4rem rgba(0, 0, 0, 0.194);
   }
 
   .img-top {
@@ -1364,9 +1368,10 @@ h3 {
   }
 
   .img-bottom {
-     position: relative;
+    position: relative;
     left: 0;
-    top: 10%;
+    top: 0;
+    margin-top: 15px;
     /* z-index: 0; */
     background-size: contain;
     border: 0;
@@ -1389,6 +1394,47 @@ h3 {
     text-align: center;
   }
 
+  .mobile-service-images {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6em;
+    margin-bottom: 40px;
+  }
+
+  .mobile-service-images div {
+    height: 150px;
+    display: flex;
+  }
+
+  .mobile-service-images img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 20px 4rem rgba(0, 0, 0, 0.208);
+  }
+
+  .mobile-service-images div:nth-of-type(3) {
+    justify-content: right;
+  }
+
+  .mobile-service-images div:nth-of-type(2) img {
+    height: 90%;
+    margin-top: 40px;
+    width: 90%;
+    align-self: flex-end;
+  }
+
+  .mobile-service-images div:nth-of-type(3) img {
+    height: 80%;
+    width: 80%;
+    align-self: flex-start;
+  }
+
+  .mobile-service-images div:nth-of-type(4) img {
+    height: 95%;
+  }
+
   .services_flex {
     display: flex;
     flex-wrap: wrap;
@@ -1399,16 +1445,14 @@ h3 {
 
   .services:nth-of-type(2),
   .services:nth-of-type(4),
-  .services:nth-of-type(6)
-   {
+  .services:nth-of-type(6) {
     background: var(--primary-dark-color);
   }
 
-   .services:nth-of-type(3),
-    .services:nth-of-type(5)
-    {
-  background: #bfeab4;
-   }
+  .services:nth-of-type(3),
+  .services:nth-of-type(5) {
+    background: #bfeab4;
+  }
 
   .services_container {
     /* opacity: 0; */
@@ -1576,12 +1620,12 @@ h3 {
   }
 
   .confession_text {
-     padding: 30px 10px;
-     gap: 0.6em;
-     background-color: #bfeab4;
+    padding: 30px 10px;
+    gap: 0.6em;
+    background-color: #ecf8e9;
   }
 
-  .say_with_us{
+  .say_with_us {
     font-size: 1.3em;
     background-color: var(--primary-dark-color);
   }
@@ -1700,7 +1744,7 @@ h3 {
   }
 
   .footer-address p {
-    opacity: 0.6
+    opacity: 0.6;
   }
 }
 
