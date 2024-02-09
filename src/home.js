@@ -367,19 +367,6 @@ const Home = () => {
             </div>
           </motion.div>
         </section>
-        <section className="confession">
-          <div className="confession_text">
-            <span className="say_with_us">Say with Us</span>
-            <p>
-              God has gone ahead of me; He will make my crooked places straight.
-              He has gone ahead of me to make my rough places smooth. He has
-              gone ahead of me to level every mountain. In the name of Jesus,
-              nothing dies within me; nothing dies around me; nothing dies in my
-              hands. It can never get worse with me, in the name of Jesus it
-              will only get better.
-            </p>
-          </div>
-        </section>
         <section className="elixir_section" id="elixir-of-life">
           <h3>Daily Devotional</h3>
           <div>
@@ -475,6 +462,19 @@ const Home = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+        <section className="confession">
+          <div className="confession_text">
+            <span className="say_with_us">Say with Us</span>
+            <p>
+              God has gone ahead of me; He will make my crooked places straight.
+              He has gone ahead of me to make my rough places smooth. He has
+              gone ahead of me to level every mountain. In the name of Jesus,
+              nothing dies within me; nothing dies around me; nothing dies in my
+              hands. It can never get worse with me, in the name of Jesus it
+              will only get better.
+            </p>
           </div>
         </section>
         <Contact />

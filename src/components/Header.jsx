@@ -60,12 +60,14 @@ const Header = () => {
       <nav className={hamburgerOpen ? "menu" : "nav_ul"}>
         <NavLink
           to="/"
+          onClick={closeMenu}
           className={({ isActive }) => (isActive ? "active-link" : "nav-link")}
         >
           Home
         </NavLink>
         <NavLink
           to="/about"
+          onClick={closeMenu}
           className={({ isActive }) => (isActive ? "active-link" : "nav-link")}
         >
           Who we are

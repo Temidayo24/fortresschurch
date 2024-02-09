@@ -933,7 +933,7 @@ h3 {
   align-items: center;
   height: 600px;
   padding: 0% 4%;
-  display: none;
+  /* display: none; */
 }
 
 .confession_text {
@@ -1366,7 +1366,7 @@ h3 {
   .img-bottom {
      position: relative;
     left: 0;
-    top: 5%;
+    top: 10%;
     /* z-index: 0; */
     background-size: contain;
     border: 0;
@@ -1571,6 +1571,19 @@ h3 {
     padding: 20px 4% 60px;
   }
 
+  .confession {
+    height: 400px;
+  }
+
+  .confession_text {
+     padding: 30px 10px;
+     gap: 0.6em;
+  }
+
+  .say_with_us{
+    font-size: 1.3em;
+  }
+
   .fortress_footer {
     width: 100%;
   }
@@ -1582,6 +1595,7 @@ h3 {
   .logoText {
     opacity: 0.7;
     font-size: 1em;
+    text-align: center;
   }
 
   .locate_map {
@@ -1642,8 +1656,8 @@ h3 {
 
   .socials_container {
     width: 100%;
-    align-self: center;
     align-items: center;
+    justify-content: center;
     gap: 0.2em;
   }
 
@@ -1651,7 +1665,7 @@ h3 {
     display: flex;
     flex-direction: row-reverse;
     gap: 0.9em;
-    align-self: flex-start;
+    align-self: center;
     font-size: 1em;
     opacity: 0.5;
   }
@@ -1661,8 +1675,17 @@ h3 {
     color: var(--primary-dark-color);
   }
 
+  .lets-get-in-touch {
+    align-items: center;
+    text-align: center;
+  }
+
   .lets-get-in-touch span:nth-of-type(1) {
     font-size: 1.5em;
+  }
+
+  .footer-address {
+    text-align: center;
   }
 
   .footer-address span {
