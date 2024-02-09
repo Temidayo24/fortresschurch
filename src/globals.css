@@ -1578,10 +1578,12 @@ h3 {
   .confession_text {
      padding: 30px 10px;
      gap: 0.6em;
+     background-color: #bfeab4;
   }
 
   .say_with_us{
     font-size: 1.3em;
+    background-color: var(--primary-dark-color);
   }
 
   .fortress_footer {
@@ -1630,6 +1632,10 @@ h3 {
     gap: 1em;
     width: 100%;
   }
+
+  /* .quicklinks h5 {
+     font-size: 1.5em;
+  } */
 
   .footer_links {
     display: flex;
