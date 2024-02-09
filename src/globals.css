@@ -737,21 +737,16 @@ h3 {
   padding: 0px 10px 0px;
   margin: 0px 10px;
   text-align: left;
+   font-size: 1.3em;
   /* opacity: 0.7; */
   background-color: #00000053;
 }
 
 .time-day span:nth-of-type(1) {
-  font-size: 1.3em;
-  /* font-style: italic; */
-  /* border-bottom: 1px solid #ffffff3f; */
   padding: 10px 0px;
 }
 
 .time-day span:nth-of-type(2) {
-  font-size: 1.3em;
-  /* color: #000000; */
-  /* border-bottom: 1px solid #ffffff3f; */
   padding: 10px 0px;
 }
 
@@ -1407,7 +1402,7 @@ h3 {
   .services:nth-of-type(5),
   .services:nth-of-type(6)
    {
-    background: var(--contrast-color);
+    background: var(--primary-dark-color);
   }
 
   .services_container {
@@ -1471,6 +1466,10 @@ h3 {
     color: var(--primary-dark-color);
     position: relative;
     top: 0;
+  }
+
+  .time-day {
+    font-size: 1.1em;
   }
 
   .elixir_section {
