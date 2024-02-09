@@ -54,7 +54,7 @@ const Header = () => {
           <span>Int&#39;l Church</span>
         </div> */}
       </Link>
-      <nav className={hamburgerOpen ? "nav_ul" : "menu"}>
+      <nav className={hamburgerOpen ? "menu" : "nav_ul"}>
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? "active-link" : "nav-link")}
@@ -116,7 +116,7 @@ const Header = () => {
           Give
         </a>
       </nav>
-      <div className={`hamburger ${hamburgerOpen ? "closed" : "open"}`} onClick={toggleHamburger}>
+      <div className={`hamburger ${hamburgerOpen ? "open" : "closed"}`} onClick={toggleHamburger}>
         <span></span>
         <span></span>
         <span></span>
