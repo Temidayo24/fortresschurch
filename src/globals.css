@@ -1638,6 +1638,7 @@ h3 {
     flex-wrap: wrap;
     align-items: center;
     gap: 1em;
+    opacity: 0.6;
   }
 
   .footer_socials {
@@ -1690,6 +1691,10 @@ h3 {
 
   .footer-address span {
     font-size: 1.5em;
+  }
+
+  .footer-address p {
+    opacity: 0.6
   }
 }
 
