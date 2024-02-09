@@ -103,11 +103,6 @@ input {
 }
 
 .header_nav_scrolled {
-  /* background: linear-gradient(
-    to right bottom,
-    rgb(28, 76, 19),
-    rgb(40, 180, 133)
-  ); */
   background: var(--primary-dark-transparent);
   position: fixed;
   top: 0;
@@ -148,13 +143,14 @@ input {
 .nav_ul {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
   width: 75%;
   font-size: 1em;
   font-weight: bold;
 }
 
-.nav_ul .nav-link {
+.nav_ul .nav-link:not(.give),
+.menu .nav-link {
   color: #ffffff;
   text-decoration: none;
   width: fit-content;
@@ -174,6 +170,28 @@ input {
   /* border-bottom: 1px solid var(--primary-dark-color); */
   padding: 25px 8px 5px;
   /* background-color: var(--primary-dark-transparent); */
+}
+
+.menu .nav-link:hover {
+  background-position: 100%;
+  /* transform: translateX(1rem); */
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    #fff 50%
+  );
+  background-size: 220%;
+  transition: all 0.4s;
+  color: var(--primary-dark-color);
+}
+
+.menu .active-link {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 8px;
+  background: #ffffff;
+  color: var(--primary-dark-color);
 }
 
 .dropdown_parent {
@@ -223,9 +241,6 @@ input {
 
 .give {
   text-decoration: none;
-}
-
-.give button {
   background-color: var(--primary-dark-color);
   padding: 3px 15px;
   border: none;
@@ -233,12 +248,21 @@ input {
   border-radius: 5px;
   font-weight: 900;
   font-size: 1.1em;
-  /* font-family: var(--font-poppins); */
 }
 
-.give button:hover {
+.give:hover {
   background-color: white;
   color: black;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger div {
+  height: 4px;
+  width: 15px;
+  background-color: var(--primary-dark-color);
 }
 
 .banner_section {
@@ -1133,6 +1157,84 @@ h3 {
   border-top: 1px solid #ffffff34;
 }
 @media screen and (max-width: 768px) {
+  .header {
+    align-items: center;
+    /* position: relative; */
+  }
+
+  .hamburger {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+    z-index: 30;
+  }
+
+  .hamburger span {
+    height: 3px;
+    width: 30px;
+    border-radius: 10px;
+    transition: all 0.2s;
+  }
+
+  .closed span {
+    background-color: var(--primary-dark-color);
+  }
+
+  .open span {
+    background-color: #ffffff;
+  }
+
+  .open span:nth-of-type(2) {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  .open span:nth-of-type(1) {
+    transform: translateY(15px) rotate(45deg) scale(1.1);
+  }
+  .open span:nth-of-type(3) {
+    transform: rotate(-45deg) scale(1.1);
+  }
+
+  .nav_ul {
+    display: none;
+  }
+
+  .menu {
+    background-color: var(--primary-dark-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    width: 100vw;
+    height: 100vh;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.8s cubic-bezier(10, 2, 3, 1);
+  }
+
+  .menu .nav-link {
+       transition: all 0.8s cubic-bezier(0.06, 0, 0.07, 1);
+  }
+
+  .give {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* font-family: var(--font-poppins); */
+  }
+
   h3 {
     font-size: 1.6em;
     text-align: center;
@@ -1144,7 +1246,7 @@ h3 {
   }
 
   .banner_section {
-    background: var(--primary-dark-transparent);
+    /* background: var(--primary-dark-transparent); */
   }
 
   .welcome {
@@ -1187,6 +1289,15 @@ h3 {
     justify-content: center;
     align-items: center;
     gap: 1em;
+    .hamburger {
+      display: none;
+    }
+
+    .hamburger div {
+      height: 4px;
+      width: 15px;
+      background-color: var(--primary-dark-color);
+    }
     padding: 0px 0px;
   }
 
@@ -1285,10 +1396,10 @@ h3 {
     /* opacity: 0; */
   }
 
- .services {
-  padding-bottom: 0px;
-  width: 100%;
-}
+  .services {
+    padding-bottom: 0px;
+    width: 100%;
+  }
 
   .first-card {
     display: none;

@@ -1,10 +1,10 @@
-
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [resources, setResources] = useState(false);
   const [fellowships, setFellowships] = useState(false);
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
   const toggleResources = () => {
     setResources(!resources);
@@ -13,6 +13,8 @@ const Header = () => {
   const toggleFellowships = () => {
     setFellowships(!fellowships);
   };
+
+  const toggleHamburger = () => [setHamburgerOpen(!hamburgerOpen)];
 
   const currentRoute = useLocation();
   const [scrolled, setScrolled] = useState(false);
@@ -52,27 +54,29 @@ const Header = () => {
           <span>Int&#39;l Church</span>
         </div> */}
       </Link>
-      <nav className="nav_ul">
+      <nav className={hamburgerOpen ? "nav_ul" : "menu"}>
         <NavLink
           to="/"
-          className={({isActive}) => (isActive ? "active-link" : "nav-link")}
+          className={({ isActive }) => (isActive ? "active-link" : "nav-link")}
         >
           Home
         </NavLink>
         <NavLink
           to="/about"
-          className={({isActive}) => (isActive ? "active-link" : "nav-link")}
+          className={({ isActive }) => (isActive ? "active-link" : "nav-link")}
         >
           Who we are
         </NavLink>
-        <a
-          href="/#services"
-          className="nav-link"
-        >
+        <a href="/#services" className="nav-link">
           Our Services
         </a>
         <div className="dropdown_parent">
-          <NavLink to="/resources" className={({isActive}) => isActive ? "active-link" : "nav-link"}>
+          <NavLink
+            to="/resources"
+            className={({ isActive }) =>
+              isActive ? "active-link" : "nav-link"
+            }
+          >
             Resources
           </NavLink>
           <NavLink className="dropdown">
@@ -102,23 +106,21 @@ const Header = () => {
                 <Link to="/green-house">Green House</Link>
               </div>
             </div> */}
-        <a
-          href="/#elixir-of-life"
-          className="nav-link"
-        >
+        <a href="/#elixir-of-life" className="nav-link">
           Elixir of Life
         </a>
         <a href="/#contact" className="nav-link">
           Contact Us
         </a>
-        <a
-          href="/#give"
-          className="give nav-link"
-        >
-          <button> Give</button>
-          {/* Give */}
+        <a href="/#give" className="give nav-link">
+          Give
         </a>
       </nav>
+      <div className={`hamburger ${hamburgerOpen ? "closed" : "open"}`} onClick={toggleHamburger}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </header>
   );
 };
