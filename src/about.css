@@ -240,3 +240,52 @@
   width: 100%;
   height: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .about_banner {
+    font-size: 2em;
+    font-weight: 800;
+    height: 250px;
+  }
+
+  .about_page_text {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .about_page_text div {
+line-height: 1.4em;
+  }
+
+  .about-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .vision_img_flex {
+    grid-template-columns: auto;
+  }
+
+  .vision_mission_statement {
+padding: 50px  4%;
+  }
+
+  .our_pastor {
+    flex-direction: column-reverse;
+    gap: 0.7em;
+    padding-top: 10px;
+  }
+
+  .pastor_text h3 {
+    font-size: 1.5em;
+  }
+
+  /* .pastor_img {
+height: 80%;
+  } */
+
+  .pst_pic {
+    border: 1px solid var(--primary-dark-color);
+    height: 200px;
+  }
+}

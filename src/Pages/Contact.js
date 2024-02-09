@@ -29,7 +29,7 @@ const Contact = () => {
         <div className="form-skewed">
           <div className="div_form">
             <div className="landing_contact_text">
-              <h4>We would love to hear from you</h4>
+              <h4>Contact Us</h4>
               <span className="text">
                 Do you have a prayer request, a testimony to share, need someone
                 to talk to, or are you a new convert? We are available 24/7.

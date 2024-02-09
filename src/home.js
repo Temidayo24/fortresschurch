@@ -480,7 +480,7 @@ const Home = () => {
         </section>
         <section className="confession">
           <div className="confession_text">
-            <span className="say_with_us">Say with Us</span>
+            <span className="say_with_us">Say with Us!</span>
             <p>
               God has gone ahead of me; He will make my crooked places straight.
               He has gone ahead of me to make my rough places smooth. He has
