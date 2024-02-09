@@ -1467,22 +1467,6 @@ h3 {
     display: none;
   }
 
-  .icon-text-container {
-    /* display: flex;
-    flex-direction: column;
-    background-color: white;
-    padding: 10px; */
-  }
-
-  .icon-text {
-    /* display: flex;
-    align-items: center;
-    gap: 0.3em;
-    font-size: 0.7em;
-    color: black; */
-    /* font-weight: 700; */
-  }
-
   .services-text {
     display: flex;
     flex-direction: column;
@@ -1580,35 +1564,6 @@ h3 {
     background-color: #0c0c0c;
   }
 
-  .landing_contact h3 {
-    color: var(--primary-dark-color);
-    border-bottom: none;
-  }
-
-  .landing_contact .text {
-    color: white;
-  }
-
-  .landing_contact .div1 {
-    width: 100%;
-    text-align: center;
-    gap: 1em;
-  }
-
-  .landing_contact_text {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1em;
-    font-size: 1em;
-  }
-
-  .landing_contact button {
-    font-size: 1.1em;
-  }
-
   .footer {
     flex-direction: column;
     gap: 3em;
@@ -1623,6 +1578,10 @@ h3 {
     padding: 30px 10px;
     gap: 0.6em;
     background-color: #ecf8e9;
+  }
+
+  .confession p {
+  font-weight: 800;
   }
 
   .say_with_us {
