@@ -15,8 +15,8 @@
   --primary-dark-color: #6fbf50;
   --primary-dark-transparent: #333333;
   --secondary-color: #ef2f34;
-  --contrast-color: #b6f5a836;
-  --body-color: #b6f5a836;
+  --contrast-color: #bfeab4;
+  --body-color: #bfeab4;
   --font-cookie: "Cookie, sans-serif";
   --font-lato: "Lato";
   --font-barlow: "Barlow";
@@ -69,7 +69,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: "Rancho";
+  font-family: var(--font-Lora);
   background-color: var(--body-color);
   font-weight: 500;
 }
@@ -90,7 +90,7 @@ a button {
 
 button,
 input {
-  font-family: var(--font-Lora);
+  font-family: "Rancho";
 }
 
 .header {
@@ -355,8 +355,8 @@ input {
   border: 0;
   border-radius: 30px;
   font-size: 1.1em;
-  color: #000000;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: var(--secondary-color);
   /* font-family: var(--font-poppins); */
 }
 
@@ -403,12 +403,12 @@ input {
 
 h3 {
   font-size: 2.2em;
-  /* text-align: center; */
   color: #001800;
   font-family: var(--font-Lora);
   text-decoration: underline 4px solid var(--primary-dark-color);
   width: fit-content;
   line-height: 0.8em;
+  font-family: "Rancho";
 }
 
 /* .title span {
@@ -622,7 +622,7 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-  background: var(--primary-dark-color) !important;
+  background: var(--secondary-color) !important;
   color: #ffffff;
   padding: 0px 60px;
   /* font-family: "serif"; */
@@ -711,6 +711,7 @@ h3 {
   margin-left: 10px;
   position: relative;
   font-size: 1.9em;
+  font-family: "Rancho";
 }
 
 .service-title span:nth-of-type(1) {
@@ -890,7 +891,7 @@ h3 {
 }
 
 .give-sub-text span {
-  color: var(--primary-dark-color);
+  color: var(--secondary-color);
   font-weight: 800;
 }
 
@@ -923,22 +924,11 @@ h3 {
 }
 
 .confession {
-  background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.296) 0%,
-      rgba(1, 17, 11, 0.548) 35%,
-      rgba(0, 0, 0, 0.463) 100%
-    ),
-    url(/public/IMG-0069.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  /* background-color: #faf8fa; */
+  background-color: var(--secondary-color);
   display: flex;
   align-items: center;
   height: 400px;
-  padding: 0% 4%;
+  padding: 0%;
   /* display: none; */
 }
 
@@ -949,18 +939,26 @@ h3 {
   justify-items: center;
   gap: 1em;
   height: fit-content;
-  background-color: transparent;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  padding: 30px 10px 70px;
+  padding: 30px 50px 70px;
   border-radius: 5px;
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
+}
+
+.confession-img {
+  width: 50%;
+  height: 100%;
+}
+
+.confession-img img {
+  height: 100%;
+  width: 100%;
 }
 
 .confession p {
   text-align: center;
   color: #ffffff;
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-family: "Rancho";
   /* font-weight: 900; */
 }

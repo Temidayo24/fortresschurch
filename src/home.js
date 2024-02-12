@@ -490,6 +490,9 @@ const Home = () => {
               will only get better.
             </p>
           </div>
+          <div className="confession-img">
+            <img src="/IMG-0069.jpg" alt=""/>
+          </div>
         </section>
         <Contact />
       </main>
