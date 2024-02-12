@@ -49,7 +49,7 @@
   align-items: center;
   height: 100%;
   padding: 4%;
-  background: var(--contrast-color);
+  background: var(--contrast-color2);
   gap: 1em;
 }
 
@@ -83,6 +83,7 @@
   gap: 2em;
   position: relative;
   padding: 100px 4%;
+  background-color: var(--contrast-color);
 }
 
 .vision_img_flex {
@@ -97,7 +98,7 @@
 .vision_img {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  border: 5px solid #55c57a;
+  border: 5px solid var(--primary-dark-color);
   padding: 5px;
   width: 100%;
   position: relative;
@@ -115,7 +116,7 @@
 }
 
 .vision_img img:hover {
-  outline: 10px solid #55c57a;
+  outline: 10px solid var(--primary-dark-color);
   transform: scale(1.1);
   z-index: 1000;
   border: 0;
@@ -131,7 +132,7 @@
   height: 100%;
   padding: 20px;
   border-radius: 0px;
-  border: 1px solid #55c57a;
+  border: 1px solid var(--primary-dark-color);
   box-shadow: 5px 10px 30px #0000005e;
 }
 
@@ -156,7 +157,7 @@
 .our_values h4,
 .vision_header {
   font-size: 1.4em;
-  font-family: "Lato";
+  font-family: "Rancho";
   color: #000000;
   width: fit-content;
   border-bottom: 2px solid var(--secondary-color);
@@ -201,9 +202,8 @@
 .our_pastor {
   flex: 1.5;
   display: flex;
-  background: var(--contrast-color);
+  background: var(--contrast-color2);
   gap: 2em;
-  padding: 60px 4% 80px;
   color: black;
   text-align: justify;
 }
@@ -213,6 +213,7 @@
   display: flex;
   flex-direction: column;
   gap: 1em;
+  padding: 60px 0 80px 4%;
 }
 
 .pastor_text div {

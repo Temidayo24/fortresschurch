@@ -16,6 +16,7 @@
   --primary-dark-transparent: #333333;
   --secondary-color: #ef2f34;
   --contrast-color: #bfeab4;
+  --contrast-color2: #f8f9fa;
   --body-color: #bfeab4;
   --font-cookie: "Cookie, sans-serif";
   --font-lato: "Lato";
@@ -100,7 +101,7 @@ input {
   padding: 10px 15px;
   display: flex;
   justify-content: space-between;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .header_nav_scrolled {
@@ -445,7 +446,7 @@ h3 {
   align-items: center;
   gap: 5em;
   text-align: justify;
-  background: var(--contrast-color);
+  background: var(--contrast-color2);
   position: relative;
 }
 
@@ -571,7 +572,7 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 4em;
-  background-color: #0b202c00;
+  background-color: #ffffff;
   /* border-top: 1px solid #0000002b; */
   /* transform: skewY(4deg); */
 }
@@ -745,7 +746,6 @@ h3 {
   margin: 0px 10px;
   text-align: left;
   font-size: 1.3em;
-  /* opacity: 0.7; */
   background-color: #00000053;
 }
 
@@ -759,12 +759,11 @@ h3 {
 
 .icon-text-container {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   gap: 0.5em;
-  /* background-color: #00000053; */
   padding: 10px;
   margin-left: 10px;
+  font-family: "Rancho";
 }
 
 .icons {
@@ -870,7 +869,7 @@ h3 {
   justify-content: center;
   align-items: center;
   gap: 3em;
-  background-color: var(--contrast-color);
+  background-color: var(--contrast-color2);
 }
 
 .give_card_container {
